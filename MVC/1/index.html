@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>MVC Pattern</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="FakeAjaxCall.js"></script>
+    <script type="text/javascript" src="ListView.js"></script>
+    <script type="text/javascript" src="ListController.js"></script>
+    <script type="text/javascript" src="TodoModel.js"></script>
+    <style type="text/css">
+      .todo{
+        background-color: #fcc;
+      }
+      .done{
+        background-color: #cfc;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="results"></ul>
+    <script type="text/javascript">
+      var oListView = new ListView(document.getElementById("results"));
+      var oTodoModel = new TodoModel();
+      var oListController = new ListController(oListView, oTodoModel);
+
+      oListController.init();
+    </script>
+  </body>
+</html>

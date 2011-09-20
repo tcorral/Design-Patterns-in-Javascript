@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>State Pattern</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="GumballMachine.js"></script>
+		<script type="text/javascript" src="states/State.js"></script>
+		<script type="text/javascript" src="states/HasQuarterState.js"></script>
+		<script type="text/javascript" src="states/NoQuarterState.js"></script>
+		<script type="text/javascript" src="states/SoldOutState.js"></script>
+		<script type="text/javascript" src="states/SoldState.js"></script>
+		<script type="text/javascript" src="states/WinnerState.js"></script>
+	</head>
+	<body>
+		<input type="button" value="insert quarter" id="insert_quarter_button"/>
+		<input type="button" value="release quarter" id="release_quarter_button"/>
+		<input type="button" value="turn crunk" id="turn_crunk_button"/>
+		<script type="text/javascript">
+			var oGumballMachine = new GumballMachine();
+
+			$("#insert_quarter_button").click(function(){
+				oGumballMachine.insertQuarter();
+			});
+			$("#release_quarter_button").click(function(){
+				oGumballMachine.ejectQuarter();
+			});
+			$("#turn_crunk_button").click(function(){
+				oGumballMachine.turnCrank();
+				oGumballMachine.dispense();
+			});
+		</script>
+	</body>
+</html>

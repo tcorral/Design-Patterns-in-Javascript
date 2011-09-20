@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Singleton Pattern</title>
+		<script type="text/javascript" src="Singleton.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var oSingle1 = new Singleton();
+			var oSingle2 = new Singleton();
+			console.log(new Singleton().toString());
+			console.log("oSingle1 is the same instance that oSingle2? " + (oSingle1 === oSingle2));
+		</script>
+	</body>
+</html>

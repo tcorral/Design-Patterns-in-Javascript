@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Decorator Pattern</title>
+		<script type="text/javascript" src="Beverage.js"></script>
+		<script type="text/javascript" src="CondimentDecorator.js"></script>
+		<script type="text/javascript" src="Expresso.js"></script>
+		<script type="text/javascript" src="HouseBlend.js"></script>
+		<script type="text/javascript" src="Mocha.js"></script>
+		<script type="text/javascript" src="Whip.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var oHouseBlendWithMochaAndWhip = new Expresso();
+			oHouseBlendWithMochaAndWhip = new Mocha(oHouseBlendWithMochaAndWhip);
+			oHouseBlendWithMochaAndWhip = new Whip(oHouseBlendWithMochaAndWhip);
+			
+			console.log(oHouseBlendWithMochaAndWhip.cost());
+		</script>
+	</body>
+</html>

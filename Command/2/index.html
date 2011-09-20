@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Command Pattern</title>
+		<script type="text/javascript" src="Command.js"></script>
+		<script type="text/javascript" src="Light.js"></script>
+		<script type="text/javascript" src="SimpleRemoteControl.js"></script>
+		<script type="text/javascript" src="LightOnCommand.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var oSimpleRemote = new SimpleRemoteControl();
+			var oLight = new Light();
+			var oLightCommand = new LightOnCommand(oLight);
+
+			oSimpleRemote.setCommand(oLightCommand);
+			oSimpleRemote.buttonWasPressed();
+			oSimpleRemote.buttonUndoWasPressed();
+		</script>
+	</body>
+</html>

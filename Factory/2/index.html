@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Factory Pattern</title>
+		<script type="text/javascript" src="PizzaIngredientFactory.js"></script>
+		<script type="text/javascript" src="PizzaStore.js"></script>
+		<script type="text/javascript" src="Pizza.js"></script>
+		<script type="text/javascript" src="ingredientFactory/NYPizzaIngredientFactory.js"></script>
+		<script type="text/javascript" src="ingredientFactory/ChicagoPizzaIngredientFactory.js"></script>
+		<script type="text/javascript" src="stores/ChicagoPizzaStore.js"></script>
+		<script type="text/javascript" src="stores/NYPizzaStore.js"></script>
+
+		<script type="text/javascript" src="ingredients/FreshClams.js"></script>
+		<script type="text/javascript" src="ingredients/Garlic.js"></script>
+		<script type="text/javascript" src="ingredients/MarinaraSauce.js"></script>
+		<script type="text/javascript" src="ingredients/ReggianoCheese.js"></script>
+		<script type="text/javascript" src="ingredients/Mushroom.js"></script>
+		<script type="text/javascript" src="ingredients/Onion.js"></script>
+		<script type="text/javascript" src="ingredients/RedPepper.js"></script>
+		<script type="text/javascript" src="ingredients/SlicedPepperoni.js"></script>
+		<script type="text/javascript" src="ingredients/ThinCrustDough.js"></script>
+
+		<script type="text/javascript" src="pizzas/CheesePizza.js"></script>
+		<script type="text/javascript" src="pizzas/ClamPizza.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var oPizzaStore = new NYPizzaStore();
+			oPizzaStore.orderPizza("cheese");
+		</script>
+	</body>
+</html>

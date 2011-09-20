@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>CompossiteIterator Pattern</title>
+		<script type="text/javascript" src="MenuComponent.js"></script>
+		<script type="text/javascript" src="Menu.js"></script>
+		<script type="text/javascript" src="MenuItem.js"></script>
+		<script type="text/javascript" src="Iterator.js"></script>
+		<script type="text/javascript" src="CompositeIterator.js"></script>
+		<script type="text/javascript" src="ConvertToIterator.js"></script>
+		<script type="text/javascript" src="NullIterator.js"></script>
+		<script type="text/javascript" src="DinnerMenu.js"></script>
+		<script type="text/javascript" src="PancakeHouseMenu.js"></script>		
+		<script type="text/javascript" src="CafeMenu.js"></script>
+		<script type="text/javascript" src="Maitress.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var oPanCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
+			var oDinnerMenu = new Menu("Dinner Menu", "Lunch");
+			var oCoffeMenu = new Menu("Cafe Menu", "Dinner");
+			var oAllMenus = new Menu("ALL MENUS", "All menus combined");
+			
+			oAllMenus.add(oPanCakeHouseMenu);
+			oAllMenus.add(oDinnerMenu);
+			
+			oDinnerMenu.add(new MenuItem("Pasta", 
+											"Spaghetti with Marinara Sauce, and a slice of sourdough bread",
+											true,
+											3.89));
+			oDinnerMenu.add(oCoffeMenu);
+			
+			oCoffeMenu.add(new MenuItem("Express", "Coffe from machine", false, 0.99));
+			
+			var oMaitress = new Maitress(oAllMenus);
+			console.log("---------------------------------------------");
+			oMaitress.printMenu();
+			console.log("---------------------------------------------");
+		</script>
+	</body>
+</html>

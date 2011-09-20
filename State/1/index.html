@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>State Pattern</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="Download.js"></script>		
+		<script type="text/javascript" src="states/State.js"></script>
+		<script type="text/javascript" src="states/DownloadFailedState.js"></script>
+		<script type="text/javascript" src="states/DownloadPausedState.js"></script>
+		<script type="text/javascript" src="states/DownloadedState.js"></script>
+		<script type="text/javascript" src="states/DownloadingState.js"></script>
+		<script type="text/javascript" src="states/ReadyState.js"></script>
+	</head>
+	<body>
+		<input type="button" value="download" id="download_button"/>
+		<input type="button" value="pause" id="pause_button"/>
+		<input type="button" value="resume" id="resume_button"/>
+		<script type="text/javascript">
+			var oDownload = new Download();
+			
+			$("#download_button").click(function(){
+				oDownload.download();
+			});
+			$("#pause_button").click(function(){
+				oDownload.pause();
+			});
+			$("#resume_button").click(function(){
+				oDownload.download();
+			});
+		</script>
+	</body>
+</html>
