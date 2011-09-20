@@ -1,6 +1,6 @@
 # Design Patterns in Javascript
 This will be a repository of how to use the Design Patterns from *Gang of Four* in your applications with Javascript.
-I borrowed the examples from [Head First Design Patterns][http://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124/ref=sr_1_1?ie=UTF8&qid=1316512770&sr=8-1] book.
+I borrowed the examples from [Head First Design Patterns](http://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124/ref=sr_1_1?ie=UTF8&qid=1316512770&sr=8-1) book.
 
 ## Design Patterns that you can found in this repository:
 
@@ -27,4 +27,4 @@ You will understand it better if you have one copy of the book I recomend you be
 
 ## Agreements
 
-[Head First Design Patterns][http://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124/ref=sr_1_1?ie=UTF8&qid=1316512770&sr=8-1] book.
+[Head First Design Patterns](http://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124/ref=sr_1_1?ie=UTF8&qid=1316512770&sr=8-1)
