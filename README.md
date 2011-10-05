@@ -14,6 +14,7 @@ I borrowed the examples from [Head First Design Patterns](http://www.amazon.com/
 * Factory
 * MVC
 * Observer
+* Proxy
 * Singleton
 * State
 * Strategy
