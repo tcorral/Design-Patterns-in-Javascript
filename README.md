@@ -33,3 +33,4 @@ All constructive comments are welcome. I promise I will answer everyone.
 ## Agreements
 
 [Head First Design Patterns](http://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124/ref=sr_1_1?ie=UTF8&qid=1316512770&sr=8-1)
+[Pro Javascript Design Patterns](http://www.amazon.com/Pro-JavaScript-Design-Patterns-ebook/dp/B001AT1YUA/ref=sr_1_2?ie=UTF8&qid=1317818607&sr=8-2)
