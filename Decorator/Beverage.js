@@ -3,7 +3,7 @@ var Beverage = function()
 	this.sDescription = 'Unknown beverage';
 };
 Beverage.prototype.getDescription = function(){
-	throw new Error("This method must be overwritten!");
+	return this.sDescription;
 };
 Beverage.prototype.cost = function()
 {
