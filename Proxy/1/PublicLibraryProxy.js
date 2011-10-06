@@ -1,20 +1,17 @@
-var PublicLibraryProxy = function(catalog)
+var PublicLibraryProxy = function(aCatalog)
 {
 	// implements Library
-	this.library = new PublicLibrary(catalog);
+	this.oLibrary = new PublicLibrary(aCatalog);
 };
-PublicLibraryProxy.prototype =
+PublicLibraryProxy.prototype.findBooks = function(sQueryString)
 {
-	findBooks : function(searchString)
-	{
-		return this.library.findBooks(searchString);
-	},
-	checkoutBook : function(book)
-	{
-		return this.library.checkoutBook(book);
-	},
-	returnBook : function(book)
-	{
-		return this.library.returnBook(book);
-	}
+	return this.oLibrary.findBooks(sQueryString);
+};
+PublicLibraryProxy.prototype.checkoutBook = function(oBookItem)
+{
+	return this.oLibrary.checkoutBook(oBookItem);
+};
+PublicLibraryProxy.prototype.returnBook = function(oBookItem)
+{
+	return this.oLibrary.returnBook(oBookItem);
 };

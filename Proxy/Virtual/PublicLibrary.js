@@ -1,64 +1,79 @@
-var PublicLibrary = function(books)
+var PublicLibrary = function(aBooks)
 {
 	// implements Library
-	this.catalog =
+	this.oCatalog =
 	{
 	};
-	for(var i = 0, len = books.length; i < len; i++)
+
+	this.setCatalogFromBooks(aBooks);
+};
+PublicLibrary.prototype.setCatalogFromBooks = function(aBooks)
+{
+	var nBook = 0;
+	var nLenBooks = aBooks.length;
+	var oBook = null;
+
+	for(; nBook < nLenBooks; nBook++)
 	{
-		this.catalog[books[i].getIsbn()] =
+		oBook = aBooks[nBook];
+		this.oCatalog[oBook.getIsbn()] =
 		{
-			book : books[i],
-			available : true
+			book: oBook,
+			available: true
 		};
 	}
+	nBook = nLenBooks = oBook = null;
 };
-PublicLibrary.prototype =
+PublicLibrary.prototype.findBooks = function(sQueryString)
 {
-	findBooks : function(searchString)
+	var aResults = [];
+	var sIsbn = '';
+	var oBook = null;
+	for(sIsbn in this.oCatalog)
 	{
-		var results = [];
-		for(var isbn in this.catalog)
+		if(!this.oCatalog.hasOwnProperty(sIsbn))
 		{
-			if(!this.catalog.hasOwnProperty(isbn))
-				continue;
-			if(searchString.match(this.catalog[isbn].getTitle()) || searchString.match(this.catalog[isbn].getAuthor()))
-			{
-				results.push(this.catalog[isbn]);
-			}
+			continue;
 		}
-		return results;
-	},
-	checkoutBook : function(book)
-	{
-		var isbn = book.getIsbn();
-		if(this.catalog[isbn])
+		oBook = this.oCatalog[sIsbn];
+		if(sQueryString.match(oBook.getTitle()) || sQueryString.match(oBook.getAuthor()))
 		{
-			if(this.catalog[isbn].available)
-			{
-				this.catalog[isbn].available = false;
-				return this.catalog[isbn];
-			}
-			else
-			{
-				throw new Error('PublicLibrary: book ' + book.getTitle() + ' is not currently available.');
-			}
+			aResults.push(oBook);
+		}
+	}
+	return aResults;
+};
+PublicLibrary.prototype.checkoutBook = function(oBookItem)
+{
+	var sIsbn = oBookItem.getIsbn();
+	var oBook = this.oCatalog[sIsbn];
+	if(oBook)
+	{
+		if(oBook.available)
+		{
+			oBook.available = false;
+			return oBook;
 		}
 		else
 		{
-			throw new Error('PublicLibrary: book ' + book.getTitle() + ' not found.');
+			throw new Error('PublicLibrary: book ' + oBookItem.getTitle() + ' is not currently available.');
 		}
-	},
-	returnBook : function(book)
+	}
+	else
 	{
-		var isbn = book.getIsbn();
-		if(this.catalog[isbn])
-		{
-			this.catalog[isbn].available = true;
-		}
-		else
-		{
-			throw new Error('PublicLibrary: book ' + book.getTitle() + ' not found.');
-		}
+		throw new Error('PublicLibrary: book ' + oBookItem.getTitle() + ' not found.');
+	}
+};
+PublicLibrary.prototype.returnBook = function(oBookItem)
+{
+	var sIsbn = oBook.getIsbn();
+	var oBook = this.oCatalog[sIsbn];
+	if(oBook)
+	{
+		oBook.available = true;
+	}
+	else
+	{
+		throw new Error('PublicLibrary: book ' + oBookItem.getTitle() + ' not found.');
 	}
 };

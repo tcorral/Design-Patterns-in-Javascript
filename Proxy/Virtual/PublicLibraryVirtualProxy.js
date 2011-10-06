@@ -1,32 +1,29 @@
-var PublicLibraryVirtualProxy = function(catalog)
+var PublicLibraryVirtualProxy = function(aCatalog)
 {
 	// implements Library
-	this.library = null;
-	this.catalog = catalog;
+	this.oLibrary = null;
+	this.aCatalog = aCatalog;
 	// Store the argument to the constructor.
 };
-PublicLibraryVirtualProxy.prototype =
+PublicLibraryVirtualProxy.prototype._initializeLibrary = function()
 {
-	_initializeLibrary : function()
+	if(this.oLibrary === null)
 	{
-		if(this.library === null)
-		{
-			this.library = new PublicLibrary(this.catalog);
-		}
-	},
-	findBooks : function(searchString)
-	{
-		this._initializeLibrary();
-		return this.library.findBooks(searchString);
-	},
-	checkoutBook : function(book)
-	{
-		this._initializeLibrary();
-		return this.library.checkoutBook(book);
-	},
-	returnBook : function(book)
-	{
-		this._initializeLibrary();
-		return this.library.returnBook(book);
+		this.oLibrary = new PublicLibrary(this.aCatalog);
 	}
+};
+PublicLibraryVirtualProxy.prototype.findBooks = function(sQueryString)
+{
+	this._initializeLibrary();
+	return this.oLibrary.findBooks(sQueryString);
+};
+PublicLibraryVirtualProxy.prototype.checkoutBook = function(oBookItem)
+{
+	this._initializeLibrary();
+	return this.oLibrary.checkoutBook(oBookItem);
+};
+PublicLibraryVirtualProxy.prototype.returnBook = function(oBookItem)
+{
+	this._initializeLibrary();
+	return this.oLibrary.returnBook(oBookItem);
 };
