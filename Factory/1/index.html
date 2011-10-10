@@ -1,17 +1,31 @@
 <html>
-	<head>
-		<title>Factory Pattern</title>
-		<script type="text/javascript" src="PizzaStore.js"></script>
-		<script type="text/javascript" src="Pizza.js"></script>
-		<script type="text/javascript" src="stores/ChicagoPizzaStore.js"></script>
-		<script type="text/javascript" src="stores/NYPizzaStore.js"></script>
-		<script type="text/javascript" src="pizzas/ChicagoStyleCheesePizza.js"></script>
-		<script type="text/javascript" src="pizzas/NyStyleCheesePizza.js"></script>
-	</head>
-	<body>
-		<script type="text/javascript">
-			var oPizzaStore = new NYPizzaStore();
-			oPizzaStore.orderPizza("cheese");
-		</script>
-	</body>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+    <title>Factory Pattern</title>
+	<script type="text/javascript" src="PizzaStore.js"></script>
+	<script type="text/javascript" src="Pizza.js"></script>
+	<script type="text/javascript" src="stores/ChicagoPizzaStore.js"></script>
+	<script type="text/javascript" src="stores/NYPizzaStore.js"></script>
+	<script type="text/javascript" src="pizzas/ChicagoStyleCheesePizza.js"></script>
+	<script type="text/javascript" src="pizzas/NyStyleCheesePizza.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oPizzaStore = new NYPizzaStore();
+oPizzaStore.orderPizza("cheese");
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>FACTORY</h1>
+    </div>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript">
+		var oPizzaStore = new NYPizzaStore();
+		oPizzaStore.orderPizza("cheese");
+    </script>
+  </body>
 </html>

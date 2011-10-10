@@ -1,23 +1,39 @@
 <html>
-	<head>
-		<title>Iterator Pattern</title>
-		<script type="text/javascript" src="MenuItem.js"></script>
-		<script type="text/javascript" src="DinnerMenu.js"></script>
-		<script type="text/javascript" src="PancakeHouseMenu.js"></script>
-		<script type="text/javascript" src="Iterator.js"></script>
-		<script type="text/javascript" src="DinnerMenuIterator.js"></script>
-		<script type="text/javascript" src="PancakeHouseMenuIterator.js"></script>
-		<script type="text/javascript" src="Maitress.js"></script>
-	</head>
-	<body>
-		<script type="text/javascript">
-			var oMaitress = new Maitress(new PancakeHouseMenu(), new DinnerMenu());
-			console.log("---------------------------------------------");
-			oMaitress.printMenu();
-			console.log("---------------------------------------------");
-			oMaitress.printBreakfastMenu();
-			console.log("---------------------------------------------");
-			oMaitress.printLunchMenu();
-		</script>
-	</body>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+    <title>Iterator Pattern</title>
+	<script type="text/javascript" src="MenuItem.js"></script>
+	<script type="text/javascript" src="DinnerMenu.js"></script>
+	<script type="text/javascript" src="PancakeHouseMenu.js"></script>
+	<script type="text/javascript" src="Iterator.js"></script>
+	<script type="text/javascript" src="DinnerMenuIterator.js"></script>
+	<script type="text/javascript" src="PancakeHouseMenuIterator.js"></script>
+	<script type="text/javascript" src="Maitress.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oMaitress = new Maitress(new PancakeHouseMenu(), new DinnerMenu());
+oMaitress.printMenu();
+oMaitress.printBreakfastMenu();
+oMaitress.printLunchMenu();
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>ITERATOR</h1>
+    </div>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript">
+		var oMaitress = new Maitress(new PancakeHouseMenu(), new DinnerMenu());
+		console.log("---------------------------------------------");
+		oMaitress.printMenu();
+		console.log("---------------------------------------------");
+		oMaitress.printBreakfastMenu();
+		console.log("---------------------------------------------");
+		oMaitress.printLunchMenu();
+    </script>
+  </body>
 </html>

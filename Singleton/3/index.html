@@ -1,14 +1,30 @@
 <html>
-	<head>
-		<title>Singleton Pattern</title>
-		<script type="text/javascript" src="Singleton.js"></script>
-	</head>
-	<body>
-		<script type="text/javascript">
-			var oSingle1 = Singleton;
-			var oSingle2 = Singleton;
-			console.log(Singleton.toString());
-			console.log("oSingle1 is the same instance that oSingle2? " + (oSingle1 === oSingle2));
-		</script>
-	</body>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+	<title>Singleton Pattern</title>
+	<script type="text/javascript" src="Singleton.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oSingle1 = Singleton;
+var oSingle2 = Singleton;
+console.log(Singleton.toString());
+console.log("oSingle1 is the same instance that oSingle2? " + (oSingle1 === oSingle2));
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>SINGLETON</h1>
+    </div>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript">
+		var oSingle1 = Singleton;
+		var oSingle2 = Singleton;
+		console.log(Singleton.toString());
+		console.log("oSingle1 is the same instance that oSingle2? " + (oSingle1 === oSingle2));
+    </script>
+  </body>
 </html>

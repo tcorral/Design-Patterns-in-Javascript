@@ -14,6 +14,7 @@ PublicLibraryVirtualProxy.prototype._initializeLibrary = function()
 };
 PublicLibraryVirtualProxy.prototype.findBooks = function(sQueryString)
 {
+	console.log("Enter findBooks PublicLibraryVirtualProxy");
 	this._initializeLibrary();
 	return this.oLibrary.findBooks(sQueryString);
 };

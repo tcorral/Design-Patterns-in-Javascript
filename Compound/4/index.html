@@ -1,66 +1,118 @@
 <html>
-	<head>
-		<title>Compound Pattern</title>
-		<script type="text/javascript" src="AbstractDuckFactory.js"></script>
-		<script type="text/javascript" src="DuckFactory.js"></script>
-		<script type="text/javascript" src="Observable.js"></script>
-		<script type="text/javascript" src="Observer.js"></script>
-		<script type="text/javascript" src="QuackObservable.js"></script>
-		<script type="text/javascript" src="Quackologist.js"></script>
-		<script type="text/javascript" src="CountingDuckFactory.js"></script>
-		<script type="text/javascript" src="ConvertToIterator.js"></script>
-		<script type="text/javascript" src="Quackable.js"></script>
-		<script type="text/javascript" src="Flock.js"></script>
-		<script type="text/javascript" src="QuackCounter.js"></script>
-		<script type="text/javascript" src="DuckCall.js"></script>
-		<script type="text/javascript" src="MallardDuck.js"></script>
-		<script type="text/javascript" src="RedheadDuck.js"></script>
-		<script type="text/javascript" src="RubberDuck.js"></script>
-		<script type="text/javascript" src="Goose.js"></script>
-		<script type="text/javascript" src="GooseAdapter.js"></script>
-	</head>
-	<body>
-		<script type="text/javascript">
-			var oDuckFactory = new CountingDuckFactory();
-			var oMallardDuck = oDuckFactory.createMallardDuck();
-			var oDuckCall = oDuckFactory.createDuckCall();
-			var oRedheadDuck = oDuckFactory.createRedheadDuck();
-			var oRubberDuck = oDuckFactory.createRubberDuck();
-			var oGoose = new Goose();
-			var oGooseAdapter = new GooseAdapter(oGoose);
+  <head>
+    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+    <title>Compound Pattern</title>
+	<script type="text/javascript" src="AbstractDuckFactory.js"></script>
+	<script type="text/javascript" src="DuckFactory.js"></script>
+	<script type="text/javascript" src="Observable.js"></script>
+	<script type="text/javascript" src="Observer.js"></script>
+	<script type="text/javascript" src="QuackObservable.js"></script>
+	<script type="text/javascript" src="Quackologist.js"></script>
+	<script type="text/javascript" src="CountingDuckFactory.js"></script>
+	<script type="text/javascript" src="ConvertToIterator.js"></script>
+	<script type="text/javascript" src="Quackable.js"></script>
+	<script type="text/javascript" src="Flock.js"></script>
+	<script type="text/javascript" src="QuackCounter.js"></script>
+	<script type="text/javascript" src="DuckCall.js"></script>
+	<script type="text/javascript" src="MallardDuck.js"></script>
+	<script type="text/javascript" src="RedheadDuck.js"></script>
+	<script type="text/javascript" src="RubberDuck.js"></script>
+	<script type="text/javascript" src="Goose.js"></script>
+	<script type="text/javascript" src="GooseAdapter.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oDuckFactory = new CountingDuckFactory();
+var oMallardDuck = oDuckFactory.createMallardDuck();
+var oDuckCall = oDuckFactory.createDuckCall();
+var oRedheadDuck = oDuckFactory.createRedheadDuck();
+var oRubberDuck = oDuckFactory.createRubberDuck();
+var oGoose = new Goose();
+var oGooseAdapter = new GooseAdapter(oGoose);
 
-			var oFlockOfDucks = new Flock();
-			oFlockOfDucks.add(oMallardDuck);
-			oFlockOfDucks.add(oDuckCall);
-			oFlockOfDucks.add(oRedheadDuck);
-			oFlockOfDucks.add(oRubberDuck);
-			oFlockOfDucks.add(oGooseAdapter);
+var oFlockOfDucks = new Flock();
+oFlockOfDucks.add(oMallardDuck);
+oFlockOfDucks.add(oDuckCall);
+oFlockOfDucks.add(oRedheadDuck);
+oFlockOfDucks.add(oRubberDuck);
+oFlockOfDucks.add(oGooseAdapter);
 
-			var oFlockOfMallards = new Flock();
+var oFlockOfMallards = new Flock();
 
-			var oMallardDuck1 = oDuckFactory.createMallardDuck();
-			var oMallardDuck2 = oDuckFactory.createMallardDuck();
-			var oMallardDuck3 = oDuckFactory.createMallardDuck();
-			var oMallardDuck4 = oDuckFactory.createMallardDuck();
+var oMallardDuck1 = oDuckFactory.createMallardDuck();
+var oMallardDuck2 = oDuckFactory.createMallardDuck();
+var oMallardDuck3 = oDuckFactory.createMallardDuck();
+var oMallardDuck4 = oDuckFactory.createMallardDuck();
 
-			oFlockOfMallards.add(oMallardDuck1);
-			oFlockOfMallards.add(oMallardDuck2);
-			oFlockOfMallards.add(oMallardDuck3);
-			oFlockOfMallards.add(oMallardDuck4);
+oFlockOfMallards.add(oMallardDuck1);
+oFlockOfMallards.add(oMallardDuck2);
+oFlockOfMallards.add(oMallardDuck3);
+oFlockOfMallards.add(oMallardDuck4);
 
-			oFlockOfDucks.add(oFlockOfMallards);
+oFlockOfDucks.add(oFlockOfMallards);
 
-			console.log("Duck simulator with Observer");
+console.log("Duck simulator with Observer");
 
-			var oQuackologist = new Quackologist();
+var oQuackologist = new Quackologist();
 
-			oFlockOfDucks.registerObserver(oQuackologist);
+oFlockOfDucks.registerObserver(oQuackologist);
 
-			oFlockOfDucks.quack();
+oFlockOfDucks.quack();
 
-			oFlockOfMallards.quack();
+oFlockOfMallards.quack();
 
-			console.log(QuackCounter.getQuacks());
-		</script>
-	</body>
+console.log(QuackCounter.getQuacks());
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>COMPOUND</h1>
+    </div>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript">
+		var oDuckFactory = new CountingDuckFactory();
+		var oMallardDuck = oDuckFactory.createMallardDuck();
+		var oDuckCall = oDuckFactory.createDuckCall();
+		var oRedheadDuck = oDuckFactory.createRedheadDuck();
+		var oRubberDuck = oDuckFactory.createRubberDuck();
+		var oGoose = new Goose();
+		var oGooseAdapter = new GooseAdapter(oGoose);
+
+		var oFlockOfDucks = new Flock();
+		oFlockOfDucks.add(oMallardDuck);
+		oFlockOfDucks.add(oDuckCall);
+		oFlockOfDucks.add(oRedheadDuck);
+		oFlockOfDucks.add(oRubberDuck);
+		oFlockOfDucks.add(oGooseAdapter);
+
+		var oFlockOfMallards = new Flock();
+
+		var oMallardDuck1 = oDuckFactory.createMallardDuck();
+		var oMallardDuck2 = oDuckFactory.createMallardDuck();
+		var oMallardDuck3 = oDuckFactory.createMallardDuck();
+		var oMallardDuck4 = oDuckFactory.createMallardDuck();
+
+		oFlockOfMallards.add(oMallardDuck1);
+		oFlockOfMallards.add(oMallardDuck2);
+		oFlockOfMallards.add(oMallardDuck3);
+		oFlockOfMallards.add(oMallardDuck4);
+
+		oFlockOfDucks.add(oFlockOfMallards);
+
+		console.log("Duck simulator with Observer");
+
+		var oQuackologist = new Quackologist();
+
+		oFlockOfDucks.registerObserver(oQuackologist);
+
+		oFlockOfDucks.quack();
+
+		oFlockOfMallards.quack();
+
+		console.log(QuackCounter.getQuacks());
+    </script>
+  </body>
 </html>

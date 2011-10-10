@@ -26,6 +26,7 @@ PublicLibrary.prototype.setCatalogFromBooks = function(aBooks)
 };
 PublicLibrary.prototype.findBooks = function(sQueryString)
 {
+	console.log("Enter findBooks PublicLibrary");
 	var aResults = [];
 	var sIsbn = '';
 	var oBook = null;

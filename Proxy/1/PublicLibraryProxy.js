@@ -5,6 +5,7 @@ var PublicLibraryProxy = function(aCatalog)
 };
 PublicLibraryProxy.prototype.findBooks = function(sQueryString)
 {
+	console.log("Enter findBooks PublicLibraryProxy");
 	return this.oLibrary.findBooks(sQueryString);
 };
 PublicLibraryProxy.prototype.checkoutBook = function(oBookItem)
