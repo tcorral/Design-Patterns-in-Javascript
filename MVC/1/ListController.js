@@ -30,14 +30,12 @@ ListController.prototype.init = function(){
 
 		$(".todo", self.oView).bind("click", function(){
         	var oElement = this;
-        	debugger;
         	self.oModel.completeItem(this.id, function(){
         		oElement.className = "done";
         	});
         });
         $(".done", self.oView).bind("click", function(){
         	var oElement = this;
-        	debugger;
         	self.oModel.undoItem(this.id, function(){
         		oElement.className = "todo";
         	});

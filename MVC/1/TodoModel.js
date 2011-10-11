@@ -23,7 +23,6 @@ TodoModel.prototype.all = function(fpCallback){
 	jQuery.ajax({
         url: "/todo-items",
         success: function (oData, oXhr) {
-        	debugger;
             fpCallback(null, oData);
         },
         error: function (oXhr) {
