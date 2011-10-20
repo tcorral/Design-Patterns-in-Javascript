@@ -4,11 +4,11 @@ var Duck = function(){
 };
 Duck.prototype.setFlyBehavior = function(oFlyBehavior)
 {
-	this.oFlyBehavior.fly();
+	this.oFlyBehavior = oFlyBehavior;
 };
-Duck.prototype.setQuackBehavior = function(oFlyBehavior)
+Duck.prototype.setQuackBehavior = function(oQuackBehavior)
 {
-	this.oQuackBehavior.quack();
+	this.oQuackBehavior = oQuackBehavior;
 };
 Duck.prototype.performFly = function(){
 	this.oFlyBehavior.fly();
