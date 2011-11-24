@@ -34,5 +34,5 @@ Download.prototype.getDownloadedState = function()
 };
 Download.prototype.getDownloadedFailedState = function()
 {
-	return new DownloadedFailedState(this);
+	return new DownloadFailedState(this);
 };

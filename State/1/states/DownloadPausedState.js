@@ -12,7 +12,7 @@ DownloadPausedState.prototype.pause = function(){
 	throw new Error("You can't pause a paused download!");
 };
 DownloadPausedState.prototype.fail = function(){
-	this.oDownload.setState(this.oDownload.getDownloadFailedState());
+	this.oDownload.setState(this.oDownload.getDownloadedFailedState());
 	console.log("Download has failed!");
 };
 DownloadPausedState.prototype.finish = function(){

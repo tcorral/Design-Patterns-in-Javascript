@@ -12,7 +12,7 @@ DownloadingState.prototype.pause = function(){
 	console.log("Pause download!");
 };
 DownloadingState.prototype.fail = function(){
-	this.oDownload.setState(this.oDownload.getDownloadFailedState());
+	this.oDownload.setState(this.oDownload.getDownloadedFailedState());
 	console.log("Download has failed!");
 };
 DownloadingState.prototype.finish = function(){
