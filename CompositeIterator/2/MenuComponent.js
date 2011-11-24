@@ -15,13 +15,13 @@ MenuComponent.prototype.isVegetarian = function(){
 MenuComponent.prototype.print = function(){
 	throw new Error("This method must be overwritten!");
 };
-MenuComponent.prototype.add = function(oComponent){
+MenuComponent.prototype.add = function(){
 	throw new Error("This method must be overwritten!");
 };
-MenuComponent.prototype.remove = function(oComponent){
+MenuComponent.prototype.remove = function(){
 	throw new Error("This method must be overwritten!");
 };
-MenuComponent.prototype.getChild = function(nIndex){
+MenuComponent.prototype.getChild = function(){
 	throw new Error("This method must be overwritten!");
 };
 MenuComponent.prototype.createIterator = function(){

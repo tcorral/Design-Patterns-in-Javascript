@@ -1,19 +1,19 @@
-var Maitress = function(aMenus){
+var Mattress = function(aMenus){
 	this.aMenus = aMenus;
 };
-Maitress.prototype._printMenu = function(oIterator){
+Mattress.prototype._printMenu = function(oIterator){
 	var oMenuItem = null;
 	while(oIterator.hasNext()){
 		oMenuItem = oIterator.next();
 		console.log(oMenuItem.getName() + ": " + oMenuItem.getDescription() + ", " + oMenuItem.getPrice() + "eur.");
 	}
 };
-Maitress.prototype.printMenu = function(){
+Mattress.prototype.printMenu = function(){
 	var nMenu = 0;
 	var nLenMenus = this.aMenus.length;
 	var oMenu = null;
 	var oIterator = null;
-	
+
 	for(; nMenu < nLenMenus;)
 	{
 		oMenu = this.aMenus[nMenu];

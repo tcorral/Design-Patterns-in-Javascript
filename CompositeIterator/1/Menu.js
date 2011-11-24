@@ -1,9 +1,9 @@
-var Menu = function(sName, sDescription){	
-	MenuComponent.apply(this);	
+var Menu = function(sName, sDescription){
+	MenuComponent.apply(this);
 	this.oIterator = null;
 	this.aMenuComponents = [];
 	this.sName = sName;
-	this.sDescription = sDescription; 
+	this.sDescription = sDescription;
 	this.createIterator = function(){
 		throw new Error("This method must be overwritten!");
 	};
@@ -17,15 +17,15 @@ Menu.prototype.remove = function(oMenuComponent){
 	var nMenuItem = 0;
 	var nLenMenuItems = this.aMenuComponents.length;
 	var oItem = null;
-	
-	for(; nMenuItem < nLenMenuItem;){
+
+	for(; nMenuItem < nLenMenuItems;){
 		oItem = this.aMenuComponents[nMenuItem];
-		if(oItem !== oMenuItem){
+		if(oItem !== oMenuComponent){
 			aMenuItems.push(oItem);
 		}
-		nMenuItem = nMenuItem + 1;	
+		nMenuItem = nMenuItem + 1;
 	}
-	this.aMenuComponents = aMenuItems;	
+	this.aMenuComponents = aMenuItems;
 };
 Menu.prototype.getChild = function(nIndex){
 	return this.aMenuComponents[nIndex];
@@ -39,11 +39,11 @@ Menu.prototype.getDescription = function(){
 Menu.prototype.print = function(){
 	console.log(this.getName() + ": " + this.getDescription());
 	console.log("--------------------------------------------");
-	
+
 	var nMenuComponent = 0;
 	var nLenMenuComponents = this.aMenuComponents.length;
 	var oMenuComponent = null;
-	
+
 	for(; nMenuComponent < nLenMenuComponents;){
 		oMenuComponent = this.aMenuComponents[nMenuComponent];
 		oMenuComponent.print();
@@ -52,7 +52,7 @@ Menu.prototype.print = function(){
 };
 Menu.prototype.createIterator = function(){
 	if(this.oIterator === null){
-		this.oIterator = new CompositeIterator(ConvertToIterator(this.aMenuComponents));
+		this.oIterator = new CompositeIterator(new ConvertToIterator(this.aMenuComponents));
 	}
 	return this.oIterator;
 };

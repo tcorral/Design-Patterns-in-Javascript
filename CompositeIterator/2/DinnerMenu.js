@@ -1,4 +1,4 @@
 var DinnerMenu = function(){
-	Menu.apply(this);	
+	Menu.apply(this);
 };
 DinnerMenu.prototype = new Menu();

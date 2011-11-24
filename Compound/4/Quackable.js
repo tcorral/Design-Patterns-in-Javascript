@@ -3,7 +3,7 @@ var Quackable = function(){
 	this.quack = function(){
 		throw new Error("This method must be overwritten!");
 	};
-	this.registerObserver = function(oObserver){
+	this.registerObserver = function(){
 		throw new Error("This method must be overwritten!");
 	};
 	this.notifyObservers = function(){

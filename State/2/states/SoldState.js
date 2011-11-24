@@ -13,9 +13,9 @@ SoldState.prototype.turnCrank = function(){
 SoldState.prototype.dispense = function(){
 	this.oGumballMachine.releaseBall();
 	if(this.oGumballMachine.getCount() > 0){
-		this.oGumballMachine.setState(this.oGummballMachine.getNoQuarterState());
+		this.oGumballMachine.setState(this.oGumballMachine.getNoQuarterState());
 	}else{
-		console.log("Ooops!, out of gumballs!");
-		this.oGumballMachine.setState(this.oGummballMachine.getSoldOutState());
+		console.log("Oops!, out of gumballs!");
+		this.oGumballMachine.setState(this.oGumballMachine.getSoldOutState());
 	}
 };

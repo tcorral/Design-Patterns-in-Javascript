@@ -1,21 +1,21 @@
-var CafeineBeverage = function(){
+var CaffeineBeverage = function(){
 
 };
-CafeineBeverage.prototype.prepareRecipe = function(){
+CaffeineBeverage.prototype.prepareRecipe = function(){
 	this.boilWater();
 	this.brew();
 	this.pourOnCup();
 	this.addCondiments();
 };
-CafeineBeverage.prototype.boilWater = function(){
+CaffeineBeverage.prototype.boilWater = function(){
 	console.log("Put water on fire until the water starts boiling!");
 };
-CafeineBeverage.prototype.pourOnCup = function(){
+CaffeineBeverage.prototype.pourOnCup = function(){
 	console.log("Put beverage on Cup!");
 };
-CafeineBeverage.prototype.brew = function(){
+CaffeineBeverage.prototype.brew = function(){
 	throw new Error("This method mus be overwritten!");
 };
-CafeineBeverage.prototype.addCondiments = function(){
+CaffeineBeverage.prototype.addCondiments = function(){
 	throw new Error("This method mus be overwritten!");
 };

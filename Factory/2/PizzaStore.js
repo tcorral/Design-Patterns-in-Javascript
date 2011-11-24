@@ -10,6 +10,6 @@ PizzaStore.prototype.orderPizza = function(sType){
 	oPizza.cut();
 	oPizza.box();
 };
-PizzaStore.prototype.createPizza = function(sType){
+PizzaStore.prototype.createPizza = function(){
 	throw new Error("This method must be overwritten!");
 };

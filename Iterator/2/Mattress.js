@@ -1,44 +1,44 @@
-var Maitress = function(oPancakeHouseMenu, oDinnerMenu){
+var Mattress = function(oPancakeHouseMenu, oDinnerMenu){
 	this.oPancakeHouseMenu = oPancakeHouseMenu;
 	this.oDinnerMenu = oDinnerMenu;
 };
-Maitress.prototype._printMenu = function(oIterator){
+Mattress.prototype._printMenu = function(oIterator){
 	var oMenuItem = null;
 	while(oIterator.hasNext()){
 		oMenuItem = oIterator.next();
 		console.log(oMenuItem.getName() + ": " + oMenuItem.getDescription() + ", " + oMenuItem.getPrice() + "eur.");
 	}
 };
-Maitress.prototype.printMenu = function(){
+Mattress.prototype.printMenu = function(){
 	var oIteratorPancakeHouseMenu = this.oPancakeHouseMenu.createIterator();
 	var oIteratorDinnerMenu = this.oDinnerMenu.createIterator();
-	
+
 	console.log("Breakfast");
 	this._printMenu(oIteratorPancakeHouseMenu);
 	console.log("Lunch");
 	this._printMenu(oIteratorDinnerMenu);
 };
-Maitress.prototype.printBreakfastMenu = function(){
+Mattress.prototype.printBreakfastMenu = function(){
 	var oIteratorPancakeHouseMenu = this.oPancakeHouseMenu.createIterator();
 	this._printMenu(oIteratorPancakeHouseMenu);
 };
-Maitress.prototype.printLunchMenu = function(){
+Mattress.prototype.printLunchMenu = function(){
 	var oIteratorDinnerMenu = this.oDinnerMenu.createIterator();
 	this._printMenu(oIteratorDinnerMenu);
 };
-Maitress.prototype.isItemVegetarian = function(sName){
+Mattress.prototype.isItemVegetarian = function(sName){
 	var oIteratorPancakeHouseMenu = this.oPancakeHouseMenu.createIterator();
 	var oIteratorDinnerMenu = this.oDinnerMenu.createIterator();
 	var oMenuItem = null;
-	
+
 	while(oIteratorPancakeHouseMenu.hasNext()){
-		oMenuItem = oIterator.next();
+		oMenuItem = oIteratorPancakeHouseMenu.next();
 		if(oMenuItem.sName === sName){
 			return oMenuItem.isVegetarian();
 		}
 	}
 	while(oIteratorDinnerMenu.hasNext()){
-		oMenuItem = oIterator.next();
+		oMenuItem = oIteratorDinnerMenu.next();
 		if(oMenuItem.sName === sName){
 			return oMenuItem.isVegetarian();
 		}

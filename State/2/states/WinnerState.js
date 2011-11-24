@@ -17,7 +17,7 @@ WinnerState.prototype.dispense = function(){
 	if(this.oGumballMachine.getCount() > 0){
 		this.oGumballMachine.setState(this.oGumballMachine.getNoQuarterState());
 	}else{
-		console.log("Ooops!, out of gumballs!");
+		console.log("Oops!, out of gumballs!");
 		this.oGumballMachine.setState(this.oGumballMachine.getSoldOutState());
 	}
 };

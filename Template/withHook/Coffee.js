@@ -1,14 +1,13 @@
 var Coffee = function(){
-	CafeineBeverage.apply(this);
+	CaffeineBeverage.apply(this);
 };
-Coffee.prototype = new CafeineBeverage();
+Coffee.prototype = new CaffeineBeverage();
 Coffee.prototype.brew = function(){
-	console.log("Dripping Coffe throug filter!");
+	console.log("Dripping Coffee through filter!");
 };
 Coffee.prototype.addCondiments = function(){
 	console.log("Add Sugar and Milk!");
 };
 Coffee.prototype.customerWantsCondiments = function(){
-	var bCustomerInput = confirm("Do you want sugar and milk?");
-	return bCustomerInput;
+	return confirm("Do you want sugar and milk?");
 };

@@ -7,10 +7,10 @@ var Amplifier = function(){
 	this.bStereoSound = false;
 };
 Amplifier.prototype.on = function(){
-	console.log("Proyector is on!");
+	console.log("Projector is on!");
 };
 Amplifier.prototype.off = function(){
-	console.log("Proyector is off!");
+	console.log("Projector is off!");
 };
 Amplifier.prototype.setVolume = function(nVolume){
 	this.nVolume = nVolume;

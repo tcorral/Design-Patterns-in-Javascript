@@ -8,7 +8,6 @@ ListController.prototype.init = function(){
 
 		var todoHTML = '';
 		var doneHTML = '';
-		var sClassName = '';
 		var nItem = 0;
 		var nLenItems = aItems.length;
 		var oItem = null;
@@ -42,9 +41,9 @@ ListController.prototype.init = function(){
         });
 	});
 };
-ListController.prototype.handleError = function(sMessage, erError){
+ListController.prototype.handleError = function(sMessage){
 	var oLi = document.createElement("li");
     oLi.className = "error";
-    oLi.innerHTML = message;
+    oLi.innerHTML = sMessage;
     this.oView.appendChild(oLi);
 };

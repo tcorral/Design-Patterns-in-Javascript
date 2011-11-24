@@ -77,5 +77,5 @@ jQuery.ajax = function(oConfig){
 			]);
 			break;
 	}
-}
+};
 

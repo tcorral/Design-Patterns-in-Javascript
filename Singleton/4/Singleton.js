@@ -7,7 +7,7 @@ function Singleton(instance)
 			return instance;
 		};
 		instance = new Singleton;
-	};
+	}
 	this.toString = function()
 	{
 		return "[object Singleton]";

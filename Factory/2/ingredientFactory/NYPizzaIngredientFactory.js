@@ -12,8 +12,7 @@ NYPizzaIngredientFactory.prototype.createCheese = function(){
 	return new ReggianoCheese();
 };
 NYPizzaIngredientFactory.prototype.createVeggies = function(){
-	var aVeggies = [new Garlic(), new Onion(), new Mushroom(), new RedPepper()];
-	return aVeggies;
+	return [new Garlic(), new Onion(), new Mushroom(), new RedPepper()];
 };
 NYPizzaIngredientFactory.prototype.createPepperoni = function(){
 

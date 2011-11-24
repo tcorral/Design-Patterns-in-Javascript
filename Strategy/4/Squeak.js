@@ -3,5 +3,5 @@ var Squeak = function(){
 };
 Squeak.prototype = new QuackBehavior();
 Squeak.prototype.quack = function(){
-	alert("Squeze");
+	alert("Squeeze");
 };

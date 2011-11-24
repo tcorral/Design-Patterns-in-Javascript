@@ -17,7 +17,7 @@ Duck.prototype.performQuack = function(){
 	this.oQuackBehavior.quack();
 };
 Duck.prototype.swim = function(){
-	alert("Chof!");
+	alert("Chop!");
 };
 Duck.prototype.display = function(){
 	throw new Error("This method must be overwritten!");

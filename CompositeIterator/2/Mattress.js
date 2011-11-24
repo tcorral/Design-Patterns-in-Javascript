@@ -1,10 +1,10 @@
-var Maitress = function(aMenus){
+var Mattress = function(aMenus){
 	this.aMenus = aMenus;
 };
-Maitress.prototype.printMenu = function(oIterator){
+Mattress.prototype.printMenu = function(){
 	this.aMenus.print();
 };
-Maitress.prototype.printVegetarianMenu = function(){
+Mattress.prototype.printVegetarianMenu = function(){
 	var oIterator = this.aMenus.createIterator();
 	var oMenuComponent = null;
 	console.log("VEGETARIAN MENU");

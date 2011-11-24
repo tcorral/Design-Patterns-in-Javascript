@@ -1,7 +1,7 @@
 var RubberDuck = function(){
 	Duck.apply(this);
 	Quackable.call(this, function(){
-		alert("Squeze");
+		alert("Squeeze");
 	});
 };
 RubberDuck.prototype = new Duck();

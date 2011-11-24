@@ -14,7 +14,7 @@
   <body>
   	<input type="button" value="insert quarter" id="insert_quarter_button"/>
 	<input type="button" value="release quarter" id="release_quarter_button"/>
-	<input type="button" value="turn crunk" id="turn_crunk_button"/>
+	<input type="button" value="turn crank" id="turn_crank_button"/>
     <div id="source">
       <h2>Source</h2>
       <pre>
@@ -47,7 +47,7 @@ $("#turn_crunk_button").click(function(){
 		$("#release_quarter_button").click(function(){
 			oGumballMachine.ejectQuarter();
 		});
-		$("#turn_crunk_button").click(function(){
+		$("#turn_crank_button").click(function(){
 			oGumballMachine.turnCrank();
 			oGumballMachine.dispense();
 		});

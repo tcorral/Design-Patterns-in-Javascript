@@ -12,8 +12,7 @@ ChicagoPizzaIngredientFactory.prototype.createCheese = function(){
 	return new ReggianoCheese();
 };
 ChicagoPizzaIngredientFactory.prototype.createVeggies = function(){
-	var aVeggies = [new Garlic(), new Onion(), new Mushroom(), new RedPepper()];
-	return aVeggies;
+	return [new Garlic(), new Onion(), new Mushroom(), new RedPepper()];
 };
 ChicagoPizzaIngredientFactory.prototype.createPepperoni = function(){
 

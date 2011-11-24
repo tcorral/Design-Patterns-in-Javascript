@@ -11,7 +11,7 @@ TodoModel.prototype.add = function(oItem, fpCallback){
     jQuery.ajax({
         url: "/todo-items/add",
         type: "POST",
-        success: function (oData, oXhr) {
+        success: function (oData) {
             fpCallback(null, oData);
         },
         error: function (oXhr) {
@@ -22,7 +22,7 @@ TodoModel.prototype.add = function(oItem, fpCallback){
 TodoModel.prototype.all = function(fpCallback){
 	jQuery.ajax({
         url: "/todo-items",
-        success: function (oData, oXhr) {
+        success: function (oData) {
             fpCallback(null, oData);
         },
         error: function (oXhr) {
@@ -34,7 +34,7 @@ TodoModel.prototype.undoItem = function(sId, fpCallback){
 	jQuery.ajax({
         url: "/todo-items/undo",
         type: "POST",
-        success: function (oData, oXhr) {
+        success: function (oData) {
             fpCallback(null, oData);
         },
         error: function (oXhr) {
@@ -46,7 +46,7 @@ TodoModel.prototype.completeItem = function(sId, fpCallback){
 	jQuery.ajax({
         url: "/todo-items/complete",
         type: "POST",
-        success: function (oData, oXhr) {
+        success: function (oData) {
             fpCallback(null, oData);
         },
         error: function (oXhr) {

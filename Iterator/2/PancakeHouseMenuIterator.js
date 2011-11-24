@@ -4,10 +4,7 @@ var PancakeHouseMenuIterator = function(aMenuItems){
 	this.nPosition = -1;
 	this.nLength = this.aMenuItems.length;
 	this.hasNext = function(){
-		if((this.nPosition + 1) >= this.nLength){
-			return false;
-		}
-		return true;
+		return (this.nPosition + 1) < this.nLength;
 	};
 	this.next = function(){
 		this.nPosition = this.nPosition + 1;
@@ -21,7 +18,7 @@ var PancakeHouseMenuIterator = function(aMenuItems){
 	this.remove = function(){
 		if(this.nPosition === -1){
 			throw new Error("You can't remove an item until you've done at least one next()!");
-		}		
+		}
 		delete this.aMenuItems[this.nPosition];
 		this.nLength = this.aMenuItems.length;
 		this._modifyPositionOnRemove();

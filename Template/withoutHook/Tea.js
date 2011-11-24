@@ -1,10 +1,10 @@
 var Tea = function(){
-	CafeineBeverage.apply(this);
+	CaffeineBeverage.apply(this);
 };
-Tea.prototype = new CafeineBeverage();
+Tea.prototype = new CaffeineBeverage();
 Tea.prototype.brew = function(){
 	console.log("Steeping the tea!");
 };
 Tea.prototype.addCondiments = function(){
-	console.log("Adding lemmon!");
+	console.log("Adding lemon!");
 };

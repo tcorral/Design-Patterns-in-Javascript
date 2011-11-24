@@ -6,5 +6,5 @@ WildTurkey.prototype.fly = function(){
 	console.log("Fly short distance!");
 };
 WildTurkey.prototype.gobble = function(){
-	console.log("Gooble! Gooble!");
+	console.log("Gobble! Gobble!");
 };

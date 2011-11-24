@@ -1,7 +1,7 @@
 <html>
   <head>
     <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
-    <title>CompossiteIterator Pattern</title>
+    <title>CompositeIterator Pattern</title>
 	<script type="text/javascript" src="MenuComponent.js"></script>
 	<script type="text/javascript" src="Menu.js"></script>
 	<script type="text/javascript" src="MenuItem.js"></script>
@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="DinnerMenu.js"></script>
 	<script type="text/javascript" src="PancakeHouseMenu.js"></script>
 	<script type="text/javascript" src="CafeMenu.js"></script>
-	<script type="text/javascript" src="Maitress.js"></script>
+	<script type="text/javascript" src="Mattress.js"></script>
   </head>
   <body>
     <div id="source">
@@ -20,19 +20,19 @@
       <pre>
 var oPanCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
 var oDinnerMenu = new Menu("Dinner Menu", "Lunch");
-var oCoffeMenu = new Menu("Cafe Menu", "Dinner");
+var oCoffeeMenu = new Menu("Cafe Menu", "Dinner");
 var oAllMenus = new Menu("ALL MENUS", "All menus combined");
 
 oAllMenus.add(oPanCakeHouseMenu);
 oAllMenus.add(oDinnerMenu);
 
 oDinnerMenu.add(new MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89));
-oDinnerMenu.add(oCoffeMenu);
+oDinnerMenu.add(oCoffeeMenu);
 
-oCoffeMenu.add(new MenuItem("Express", "Coffe from machine", false, 0.99));
+oCoffeeMenu.add(new MenuItem("Express", "Coffee from machine", false, 0.99));
 
-var oMaitress = new Maitress(oAllMenus);
-oMaitress.printVegetarianMenu();
+var oMattress = new Mattress(oAllMenus);
+oMattress.printVegetarianMenu();
       </pre>
     </div>
     <div id="console">
@@ -44,7 +44,7 @@ oMaitress.printVegetarianMenu();
     <script type="text/javascript">
 		var oPanCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
 		var oDinnerMenu = new Menu("Dinner Menu", "Lunch");
-		var oCoffeMenu = new Menu("Cafe Menu", "Dinner");
+		var oCoffeeMenu = new Menu("Cafe Menu", "Dinner");
 		var oAllMenus = new Menu("ALL MENUS", "All menus combined");
 
 		oAllMenus.add(oPanCakeHouseMenu);
@@ -54,13 +54,13 @@ oMaitress.printVegetarianMenu();
 										"Spaghetti with Marinara Sauce, and a slice of sourdough bread",
 										true,
 										3.89));
-		oDinnerMenu.add(oCoffeMenu);
+		oDinnerMenu.add(oCoffeeMenu);
 
-		oCoffeMenu.add(new MenuItem("Express", "Coffe from machine", false, 0.99));
+		oCoffeeMenu.add(new MenuItem("Express", "Coffee from machine", false, 0.99));
 
-		var oMaitress = new Maitress(oAllMenus);
+		var oMattress = new Mattress(oAllMenus);
 		console.log("---------------------------------------------");
-		oMaitress.printVegetarianMenu();
+		oMattress.printVegetarianMenu();
 		console.log("---------------------------------------------");
     </script>
   </body>

@@ -7,7 +7,7 @@ var Observable = function(oDuck){
 	};
 	this.notifyObservers = function(oObserver){
 		var oIterator = new ConvertToIterator(this.aObservers);
-		var oObserver = null;
+		oObserver = null;
 		while(oIterator.hasNext()){
 			oObserver = oIterator.next();
 			oObserver.update(this.oDuck);

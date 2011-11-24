@@ -1,14 +1,13 @@
 var Tea = function(){
-	CafeineBeverage.apply(this);
+	CaffeineBeverage.apply(this);
 };
-Tea.prototype = new CafeineBeverage();
+Tea.prototype = new CaffeineBeverage();
 Tea.prototype.brew = function(){
 	console.log("Steeping the tea!");
 };
 Tea.prototype.addCondiments = function(){
-	console.log("Adding lemmon!");
+	console.log("Adding lemon!");
 };
 Tea.prototype.customerWantsCondiments = function(){
-	var bCustomerInput = confirm("Do you want some lemmon?");
-	return bCustomerInput;
+	return confirm("Do you want some lemon?");
 };

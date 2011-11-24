@@ -1,38 +1,38 @@
-var Maitress = function(){
+var Mattress = function(){
 	this.aBreakFastItems = new PancakeHouseMenu().getMenuItems();
 	this.oLunchItems = new DinnerMenu().getMenuItems();
 };
-Maitress.prototype.printMenu = function(){
+Mattress.prototype.printMenu = function(){
 	var nMenuItem = 0;
 	var nLenMenuItems = 0;
 	var oMenuItem = null;
 	var sKey = '';
-	
+
 	nLenMenuItems = this.aBreakFastItems.length;
-	
+
 	for(; nMenuItem < nLenMenuItems;)
 	{
 		oMenuItem = this.aBreakFastItems[nMenuItem];
 		console.log(oMenuItem.getName() + ": " + oMenuItem.getDescription() + ", " + oMenuItem.getPrice() + "eur.");
 		nMenuItem = nMenuItem + 1;
 	}
-	
+
 	for(sKey in this.oLunchItems)
 	{
 		if(this.oLunchItems.hasOwnProperty(sKey)){
 			oMenuItem = this.oLunchItems[sKey];
 			console.log(oMenuItem.getName() + ": " + oMenuItem.getDescription() + ", " + oMenuItem.getPrice() + "eur.");
 		}
-		
+
 	}
 };
-Maitress.prototype.printBreakfastMenu = function(){
+Mattress.prototype.printBreakfastMenu = function(){
 	var nMenuItem = 0;
 	var nLenMenuItems = 0;
 	var oMenuItem = null;
-	
+
 	nLenMenuItems = this.aBreakFastItems.length;
-	
+
 	for(; nMenuItem < nLenMenuItems;)
 	{
 		oMenuItem = this.aBreakFastItems[nMenuItem];
@@ -40,25 +40,26 @@ Maitress.prototype.printBreakfastMenu = function(){
 		nMenuItem = nMenuItem + 1;
 	}
 };
-Maitress.prototype.printLunchMenu = function(){
+Mattress.prototype.printLunchMenu = function(){
 	var sKey = '';
+	var oMenuItem = null;
 	for(sKey in this.oLunchItems)
 	{
 		if(this.oLunchItems.hasOwnProperty(sKey)){
 			oMenuItem = this.oLunchItems[sKey];
 			console.log(oMenuItem.getName() + ": " + oMenuItem.getDescription() + ", " + oMenuItem.getPrice() + "eur.");
 		}
-		
+
 	}
 };
-Maitress.prototype.isItemVegetarian = function(sName){
+Mattress.prototype.isItemVegetarian = function(sName){
 	var nMenuItem = 0;
 	var nLenMenuItems = 0;
 	var oMenuItem = null;
 	var sKey = '';
-	
+
 	nLenMenuItems = this.aBreakFastItems.length;
-	
+
 	for(; nMenuItem < nLenMenuItems;)
 	{
 		oMenuItem = this.aBreakFastItems[nMenuItem];
@@ -67,7 +68,7 @@ Maitress.prototype.isItemVegetarian = function(sName){
 		}
 		nMenuItem = nMenuItem + 1;
 	}
-	
+
 	for(sKey in this.oLunchItems)
 	{
 		if(this.oLunchItems.hasOwnProperty(sKey)){
@@ -76,7 +77,7 @@ Maitress.prototype.isItemVegetarian = function(sName){
 				return oMenuItem.isVegetarian();
 			}
 		}
-		
+
 	}
 	throw new Error("Sorry, but we don't have this in our menu!");
 };

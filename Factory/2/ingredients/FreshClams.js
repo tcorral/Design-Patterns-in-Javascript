@@ -1,3 +1,3 @@
-var FleshClams = function(){
+var FreshClams = function(){
 
 };

@@ -13,12 +13,16 @@ var ConvertToIterator = function(oObject, bStopAutoInit)
 
 	this.aArray = oObject;
 
-	this.bIsArray = Namespace.Utilities.isArray(this.aArray);
+	this.bIsArray = this.isArray(this.aArray);
 
 	if(!bStopAutoInit)
 	{
 		this._setKeysAndLength();
 	}
+};
+ConvertToIterator.prototype.isArray = function(aArray)
+{
+	return Object.prototype.toString.call(aArray) === "[object Array]";
 };
 ConvertToIterator.prototype._setKeysAndLength = function()
 {

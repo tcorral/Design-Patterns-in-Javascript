@@ -4,10 +4,7 @@ var DinnerMenuIterator = function(oMenuItems){
 	this.nPosition = -1;
 	this.nLength = 0;
 	this.hasNext = function(){
-		if((this.nPosition + 1) >= this.nLength){
-			return false;
-		}
-		return true;
+		return (this.nPosition + 1) < this.nLength;
 	};
 	this.next = function(){
 		this.nPosition = this.nPosition + 1;
