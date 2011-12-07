@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+        <title>Try-Finally Pattern</title>
+        <script type="text/javascript">
+            var App = {};
+        </script>
+        <script type="text/javascript" src="TryFinally.js"></script>
+        <style type="text/css">
+            #test
+            {
+                margin-left: 40px;
+                margin-bottom: 30px;
+            }
+            #test span
+            {
+                display:block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #test div
+            {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+   <body>
+        <div id="source">
+            <h2>Source</h2>
+            <div id='test'>
+                <span>Start example source</span>
+                <div id='test1'>Test 1</div>
+                <div id='test2'>Test 2</div>
+                <div id='test3'>Test 3</div>
+                <span>End example source</span>
+            </div>
+            <pre>
+    var oTryFinally = new TryFinally();
+    oTryFinally.getContent();
+            </pre>
+        </div>
+        <div id="console">
+            <h2>Console</h2>
+            <ul></ul>
+            <h1>Try-Finally</h1>
+        </div>
+        <script type="text/javascript" src="../js/utils.js"></script>
+        <script type="text/javascript">
+            var oTryFinally = new TryFinally();
+            var oTexts = oTryFinally.getContent();
+            console.log(oTexts.test1);
+            console.log(oTexts.test2);
+            console.log(oTexts.test3);
+        </script>
+    </body>
+</html>

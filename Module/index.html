@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+        <title>Module Pattern</title>
+        <script type="text/javascript" src="Module.js"></script>
+        <style type="text/css">
+            #test
+            {
+                margin-left: 40px;
+            }
+            #test span
+            {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+   <body>
+        <div id="source">
+            <h2>Source</h2>
+            <pre>
+    var oModule = Module();
+    oModule.init();
+            </pre>
+        </div>
+        <div id="console">
+            <h2>Console</h2>
+            <div id="test"></div>
+            <ul></ul>
+            <h1>Module</h1>
+        </div>
+        <script type="text/javascript" src="../js/utils.js"></script>
+        <script type="text/javascript">
+            var oModule = Module();
+            oModule.init();
+        </script>
+    </body>
+</html>
