@@ -1,8 +1,8 @@
 # Design Patterns in Javascript
 This will be a repository of how to use the Design Patterns from *Gang of Four* in your applications with Javascript.
-I borrowed the examples from [Head First Design Patterns](http://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124/ref=sr_1_1?ie=UTF8&qid=1316512770&sr=8-1) book.
 
 ## Update:
+Added new Design Patterns exclusive from Javascript.
 Added changes to index.html. Now you can check the code to be executed and the execution without to have open console. Thanks -adamnbowen-
 
 ## Design Patterns that you can found in this repository:
@@ -23,6 +23,13 @@ Added changes to index.html. Now you can check the code to be executed and the e
 * Strategy
 * Template
 * Compound (Use some design patterns together to solve a problem)
+* Chaining
+* Lazy
+* Module
+* Module Revealed
+* Namespace
+* Nullify
+* Try-Finally
 
 This repository contains a folder by each design pattern.
 

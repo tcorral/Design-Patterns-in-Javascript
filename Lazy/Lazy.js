@@ -26,7 +26,7 @@ Lazy.prototype.update = function(sTextSpan, dTime)
 		aHTML.push("</span>");
 		aHTML.push("<span id='timeText'>");
 			aHTML.push(this.getFormattedTime(dTime));
-		aHTML.push("</span>")
+		aHTML.push("</span>");
 	aHTML.push("</div>");
 	this.oContainer.innerHTML = aHTML.join("");
 	aHTML = null;
