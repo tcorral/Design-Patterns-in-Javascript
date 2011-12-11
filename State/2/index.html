@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+	<title>State Pattern</title>
+	<script type="text/javascript" src="../../js/jquery.js"></script>
+	<script type="text/javascript" src="GumballMachine.js"></script>
+	<script type="text/javascript" src="states/State.js"></script>
+	<script type="text/javascript" src="states/HasQuarterState.js"></script>
+	<script type="text/javascript" src="states/NoQuarterState.js"></script>
+	<script type="text/javascript" src="states/SoldOutState.js"></script>
+	<script type="text/javascript" src="states/SoldState.js"></script>
+	<script type="text/javascript" src="states/WinnerState.js"></script>
+  </head>
+  <body>
+  	<input type="button" value="insert quarter" id="insert_quarter_button"/>
+	<input type="button" value="release quarter" id="release_quarter_button"/>
+	<input type="button" value="turn crank" id="turn_crank_button"/>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oGumballMachine = new GumballMachine();
+
+$("#insert_quarter_button").click(function(){
+	oGumballMachine.insertQuarter();
+});
+$("#release_quarter_button").click(function(){
+	oGumballMachine.ejectQuarter();
+});
+$("#turn_crunk_button").click(function(){
+	oGumballMachine.turnCrank();
+	oGumballMachine.dispense();
+});
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>STATE</h1>
+    </div>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript">
+		var oGumballMachine = new GumballMachine();
+
+		$("#insert_quarter_button").click(function(){
+			oGumballMachine.insertQuarter();
+		});
+		$("#release_quarter_button").click(function(){
+			oGumballMachine.ejectQuarter();
+		});
+		$("#turn_crank_button").click(function(){
+			oGumballMachine.turnCrank();
+			oGumballMachine.dispense();
+		});
+    </script>
+  </body>
+</html>

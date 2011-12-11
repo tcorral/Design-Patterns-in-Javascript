@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <title>Adapter Pattern</title>
+    <script type="text/javascript" src="Duck.js"></script>
+    <script type="text/javascript" src="Turkey.js"></script>
+    <script type="text/javascript" src="MallardDuck.js"></script>
+    <script type="text/javascript" src="WildTurkey.js"></script>
+    <script type="text/javascript" src="TurkeyAdapter.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oMallardDuck = new MallardDuck();
+var oWildTurkey = new WildTurkey();
+var oTurkeyAdapter = new TurkeyAdapter(oWildTurkey);
+
+oMallardDuck.fly();
+oMallardDuck.quack();
+
+oWildTurkey.fly();
+oWildTurkey.gobble();
+
+oTurkeyAdapter.fly();
+oTurkeyAdapter.quack();
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>ADAPTER</h1>
+    </div>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript">
+      var oMallardDuck = new MallardDuck();
+      var oWildTurkey = new WildTurkey();
+      var oTurkeyAdapter = new TurkeyAdapter(oWildTurkey);
+
+      oMallardDuck.fly();
+      oMallardDuck.quack();
+
+      oWildTurkey.fly();
+      oWildTurkey.gobble();
+
+      oTurkeyAdapter.fly();
+      oTurkeyAdapter.quack();
+    </script>
+  </body>
+</html>

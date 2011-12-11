@@ -1,0 +1,68 @@
+.accordion
+{
+	position:relative;
+	overflow:hidden;
+}
+
+
+.accordion .panel
+{
+	background-color:#000;
+	background-image:url(accordion-assets/images/preloader.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	position:absolute;
+	overflow:hidden;
+}
+
+
+.accordion .shadow
+{
+	background:url(accordion-assets/images/shadow.png) repeat-Y;
+	position:absolute;
+	right:0px;
+	width:25px;
+	height:100%;
+}
+
+
+.accordion .preloader
+{
+	background:url(accordion-assets/images/preloader2.gif) no-repeat;
+	width:62px;
+	height:14px;
+	position:absolute;
+	z-index:15;
+}
+
+
+.accordion .caption
+{
+	overflow:hidden;
+	position:absolute;
+	z-index:20;
+}
+
+
+.accordion .caption-background
+{
+	background:transparent url(accordion-assets/images/captionBg.png);
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+
+.accordion .caption p
+{
+	color:#FFF;
+	margin:0px;
+	padding:10px;
+}
+
+
+.accordion .caption p a
+{
+	color:#FFF;
+}

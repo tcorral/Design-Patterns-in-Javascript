@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <title>Decorator Pattern</title>
+	<script type="text/javascript" src="Beverage.js"></script>
+	<script type="text/javascript" src="CondimentDecorator.js"></script>
+	<script type="text/javascript" src="Espresso.js"></script>
+	<script type="text/javascript" src="HouseBlend.js"></script>
+	<script type="text/javascript" src="Mocha.js"></script>
+	<script type="text/javascript" src="Whip.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oEspressoWithMochaAndWhip = new Espresso();
+oEspressoWithMochaAndWhip = new Mocha(oEspressoWithMochaAndWhip);
+oEspressoWithMochaAndWhip = new Whip(oEspressoWithMochaAndWhip);
+
+console.log(oEspressoWithMochaAndWhip.cost());
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>DECORATOR</h1>
+    </div>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript">
+		var oEspressoWithMochaAndWhip = new Espresso();
+		oEspressoWithMochaAndWhip = new Mocha(oEspressoWithMochaAndWhip);
+		oEspressoWithMochaAndWhip = new Whip(oEspressoWithMochaAndWhip);
+
+		console.log(oEspressoWithMochaAndWhip.cost());
+    </script>
+  </body>
+</html>

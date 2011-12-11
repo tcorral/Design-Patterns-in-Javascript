@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <title>Facade Pattern</title>
+	<script type="text/javascript" src="HomeTheaterFacade.js"></script>
+	<script type="text/javascript" src="elements/Amplifier.js"></script>
+	<script type="text/javascript" src="elements/CdPlayer.js"></script>
+	<script type="text/javascript" src="elements/DvdPlayer.js"></script>
+	<script type="text/javascript" src="elements/PopcornPopper.js"></script>
+	<script type="text/javascript" src="elements/Projector.js"></script>
+	<script type="text/javascript" src="elements/Screen.js"></script>
+	<script type="text/javascript" src="elements/TheaterLights.js"></script>
+	<script type="text/javascript" src="elements/Tuner.js"></script>
+	<script type="text/javascript" src="Movie.js"></script>
+	<script type="text/javascript" src="Nikita.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var oHomeTheaterFacade = new HomeTheaterFacade(new Amplifier(), new Tuner(), new DvdPlayer(),new CdPlayer(), new Projector(),
+						new TheaterLights(), new Screen(), new PopcornPopper());
+oHomeTheaterFacade.watchMovie(new Nikita());
+oHomeTheaterFacade.endMovie();
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>FACADE</h1>
+    </div>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript">
+		var oHomeTheaterFacade = new HomeTheaterFacade(new Amplifier(), new Tuner(), new DvdPlayer(), new CdPlayer(), new Projector(), new TheaterLights(), new Screen(), new PopcornPopper());
+		oHomeTheaterFacade.watchMovie(new Nikita());
+		oHomeTheaterFacade.endMovie();
+    </script>
+  </body>
+</html>

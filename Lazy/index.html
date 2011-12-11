@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+        <title>Lazy Pattern</title>
+        <script type="text/javascript" src="Lazy.js"></script>
+        <style type="text/css">
+            #test
+            {
+                margin-left: 40px;
+            }
+            #test span
+            {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+   <body>
+        <div id="source">
+            <h2>Source</h2>
+            <pre>
+    var nCounter = 0;
+    var aElements = ['Zero', 'First', 'Second', 'Third', 'Fourth'];
+    var nIdTimeout = 0;
+    var oLazy = new Lazy(document.getElementById('test'), aElements[nCounter], new Date());
+    nIdTimeout = setInterval(function()
+    {
+        if(nCounter === 4)
+        {
+            clearInterval(nIdTimeout);
+        }
+        oLazy.update(aElements[nCounter++], new Date());
+    }, 500);
+            </pre>
+        </div>
+        <div id="console">
+            <h2>Console</h2>
+            <div id="test"></div>
+            <ul></ul>
+            <h1>Lazy</h1>
+        </div>
+        <script type="text/javascript" src="../js/utils.js"></script>
+        <script type="text/javascript">
+            var nCounter = 0;
+            var aElements = ['Zero', 'First', 'Second', 'Third', 'Fourth'];
+            var nIdTimeout = 0;
+            var oLazy = new Lazy(document.getElementById('test'), aElements[nCounter], new Date());
+            nIdTimeout = setInterval(function()
+            {
+                if(nCounter === 4)
+                {
+                    clearInterval(nIdTimeout);
+                }
+                oLazy.update(aElements[nCounter++], new Date());
+            }, 500);
+        </script>
+    </body>
+</html>

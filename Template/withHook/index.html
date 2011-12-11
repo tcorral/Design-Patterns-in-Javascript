@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+	<title>Template Pattern</title>
+	<script type="text/javascript" src="CaffeineBeverage.js"></script>
+	<script type="text/javascript" src="Coffee.js"></script>
+	<script type="text/javascript" src="Tea.js"></script>
+  </head>
+  <body>
+  	<div id="source">
+      <h2>Source</h2>
+      <pre>
+var oCoffee = new Coffee();
+oCoffee.prepareRecipe();
+var oTea = new Tea();
+oTea.prepareRecipe();
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>TEMPLATE</h1>
+    </div>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript">
+    	setTimeout(function()
+    	{
+    		var oCoffee = new Coffee();
+			oCoffee.prepareRecipe();
+			console.log("*********************************************************");
+			var oTea = new Tea();
+			oTea.prepareRecipe();
+    	}, 1000);
+    </script>
+  </body>
+</html>
