@@ -4,6 +4,41 @@ body
 	margin: 0 auto;
 	width:1001px;
 }
+#projects
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 900px;
+    height: 90px;
+}
+#projects div.title
+{
+    font-size: 14px;
+    color: #333;
+}
+.other_projects
+{
+    list-style-type: none;
+}
+.other_projects li
+{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 15%;
+}
+.other_projects li a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: #666;
+}
+.other_projects li a:hover
+{
+    font-weight: bold;
+    color: #000;
+}
 #source
 {
 	background: transparent url(../img/source.jpg) no-repeat;
