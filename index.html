@@ -36,6 +36,19 @@
 						}});
 			});
 		</script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-27648153-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 	</head>
 	<body>
     	<div id="header">
@@ -159,7 +172,11 @@
 						The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
                 	</div>
                 	<div class='link'>
-                		<a href="#">Example</a>
+                		<a href="https://github.com/tcorral/Design-Patterns-in-Javascript/tree/master/Strategy/1">Step 1</a>
+                		<a href="https://github.com/tcorral/Design-Patterns-in-Javascript/tree/master/Strategy/2">Step 2</a>
+                		<a href="https://github.com/tcorral/Design-Patterns-in-Javascript/tree/master/Strategy/2_1">Step 2.1</a>
+                		<a href="https://github.com/tcorral/Design-Patterns-in-Javascript/tree/master/Strategy/3">Step 3</a>
+                		<a href="https://github.com/tcorral/Design-Patterns-in-Javascript/tree/master/Strategy/4">Step 4</a>
                 	</div>
                 </div>
             </li>
@@ -220,7 +237,7 @@
                 <div class="caption">
                 	<h2>Namespace</h2>
                 	<div class="contentCaption">
-						a
+						The Namespace Pattern is one of the most valuable patterns to be used in Javascript. The Namespace Pattern avoids to pollute globals and allows you to use the same name of method under different Namespaces, and avoids collision with other libraries.
                 	</div>
                 	<div class='link'>
                 		<a href="Namespace/index.html">Example</a>
@@ -232,7 +249,7 @@
                 <div class="caption">
                 	<h2>Lazy</h2>
                 	<div class="contentCaption">
-						a
+						The Lazy Pattern is specially useful when the first time we call a function/method it makes a big job but we only need one part of this job to be done when the function/method is called again. This pattern avoids to repeat job and make faster the execution of code.
                 	</div>
                 	<div class='link'>
                 		<a href="Lazy/index.html">Example</a>
@@ -244,7 +261,10 @@
                 <div class="caption">
                 	<h2>Module</h2>
                 	<div class="contentCaption">
-						a
+                		<h3>Module</h3>
+						The Module Pattern is a way when it's needed to separate functionalities and/or avoid the other modules fail if something goes wrong in one of the other modules.
+						<h3>Module Revealed</h3>
+						Use the same Module Pattern but uses it to create some private variables/method and only expose the methods that we want to be public. It's used on API's.
                 	</div>
                 	<div class='link'>
                 		<a href="Module/index.html">Example</a>
@@ -253,11 +273,25 @@
                 </div>
             </li>
             <li>
+                <img src="img/page/nullify.jpg"/>
+                <div class="caption">
+                	<h2>Nullify</h2>
+                	<div class="contentCaption">
+						The Nullify Pattern is used to remove all references to local variables to make easier the job of the Garbage Collector. This is needed to avoid memory leaks and to manage memory properly.
+						<h4>See 'Try-Finally'</h4>
+                	</div>
+                	<div class='link'>
+                		<a href="Nullify/index.html">Example</a>
+                	</div>
+                </div>
+            </li>
+            <li>
                 <img src="img/page/tryfinally.jpg"/>
                 <div class="caption">
                 	<h2>Try-Finally</h2>
                 	<div class="contentCaption">
-						a
+						The Try-Finally Pattern is the same as the Nullify Pattern but if you try to use Nullify Pattern in functions/method where you return something Nullify Pattern is not possible because you can lost references.
+						<h4>See 'Nullify'</h4>
                 	</div>
                 	<div class='link'>
                 		<a href="Try-Finally/index.html">Example</a>
@@ -269,7 +303,7 @@
                 <div class="caption">
                 	<h2>Chaining</h2>
                 	<div class="contentCaption">
-						a
+						The Chaining Pattern is used to chain method. If this pattern is not used you will need to call the method adding the object on each new line. This is used to remove too much bytes of code.
                 	</div>
                 	<div class='link'>
                 		<a href="Chaining/index.html">Example</a>
@@ -281,25 +315,24 @@
                 <div class="caption">
                 	<h2>M.V.C.</h2>
                 	<div class="contentCaption">
-						a
+						The M.V.C. (Model-View-Controller) Pattern in Javascript is a bit weird, because the view is the element of the DOM, but we can use this method to separated logic and ajax calls in:
+						<br/><br/><br/>
+						<ul>
+							<li>View: DOM element/s.</li>
+							<li>Model: Class that manages all the access to the server.</li>
+							<li>Controller: All the logic that will act when the View is updated or when something is returned from Model.</li>
+						</ul>
+						<br/>
+						<div class="link">
+							See <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>
+						</div>
                 	</div>
                 	<div class='link'>
                 		<a href="MVC/1/index.html">Example</a>
                 	</div>
                 </div>
             </li>
-            <li>
-                <img src="img/page/nullify.jpg"/>
-                <div class="caption">
-                	<h2>Nullify</h2>
-                	<div class="contentCaption">
-						a
-                	</div>
-                	<div class='link'>
-                		<a href="Nullify/index.html">Example</a>
-                	</div>
-                </div>
-            </li>
       	</ul>
+      	<a href="https://github.com/tcorral/Design-Patterns-in-Javascript/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/30f550e0d38ceb6ef5b81500c64d970b7fb0f028/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub"></a>
 	</body>
 </html>
