@@ -1,0 +1,21 @@
+<html>
+<body>
+<script type="text/javascript">
+	var aElements = [];
+	var nElement = 0;
+	var nTimes = 100000;
+	function createElement() {
+		var oDiv = document.createElement("div");
+		oDiv.onclick = function () {};
+		try {
+			return oDiv;
+		} finally {
+			oDiv = null;
+		}
+	}
+	for (; nElement < nTimes; nElement++) {
+		aElements.push(createElement());
+	}
+</script>
+</body>
+</html>
