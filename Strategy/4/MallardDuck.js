@@ -1,7 +1,7 @@
 var MallardDuck = function(){
 	Duck.apply(this);
-	this.oFlyBehavior = new Quack();
-	this.oQuackBehavior = new FlyWithWings();
+	this.oFlyBehavior = new FlyWithWings();
+	this.oQuackBehavior = new Quack();
 };
 MallardDuck.prototype = new Duck();
 MallardDuck.prototype.display = function(){
