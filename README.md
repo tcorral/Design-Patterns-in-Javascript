@@ -3,7 +3,7 @@ This will be a repository of how to use the Design Patterns from *Gang of Four* 
 
 ## Update:
 Added new Design Patterns exclusive from Javascript.
-Added changes to index.html. Now you can check the code to be executed and the execution without to have open console. Thanks -adamnbowen-
+Added changes to index.html. Now you can check the code to be executed and the execution without open the console. Thanks -adamnbowen-
 
 ## Design Patterns that you can find in this repository:
 
