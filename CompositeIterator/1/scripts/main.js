@@ -1,12 +1,3 @@
-<html>
-  <head>
-    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
-    <title>CompositeIterator Pattern</title>
-  </head>
-  <body>
-    <div id="source">
-      <h2>Source</h2>
-      <pre>
 import Menu from './Menu';
 import MenuItem from './MenuItem';
 import Mattress from './Mattress';
@@ -31,15 +22,3 @@ var oMattress = new Mattress(oAllMenus);
 console.log("---------------------------------------------");
 oMattress.printMenu();
 console.log("---------------------------------------------");
-
-      </pre>
-    </div>
-    <div id="console">
-    	<h2>Console</h2>
-	    <ul></ul>
-	    <h1>COMPOSITE ITERATOR</h1>
-    </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
-    <script type="text/javascript" src="dist/scripts/main.js"></script>
-  </body>
-</html>
