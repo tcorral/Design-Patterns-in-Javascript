@@ -9,21 +9,28 @@ class MenuItem extends MenuComponent {
     this._isVegetarian = isVegetarian;
     this.price = price;
   }
+
   getName() {
     return this.name;
   }
+
   getDescription() {
     return this.description;
   }
+
   getPrice() {
     return this.price;
   }
+
   isVegetarian() {
     return this._isVegetarian;
   }
+
   print() {
+    debugger;
     console.log(this.getName() + ": " + this.getDescription() + ", " + this.getPrice() + "euros");
   }
+
   createIterator() {
     return new NullIterator();
   }

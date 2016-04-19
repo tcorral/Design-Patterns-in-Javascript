@@ -31,6 +31,7 @@ class Menu extends MenuComponent {
 		return this.description;
 	}
 	print() {
+		debugger;
 		console.log(this.getName() + ": " + this.getDescription());
 		console.log("--------------------------------------------");
 

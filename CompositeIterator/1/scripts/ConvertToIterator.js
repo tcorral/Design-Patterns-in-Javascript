@@ -1,46 +1,46 @@
-function getIndexArray(instance) {
-  return instance.lastIndex;
+function getIndexArray() {
+  return this.lastIndex;
 }
-function getIndexObject(instance) {
-  return instance.keys[instance.lastIndex];
-}
-
-function getCurrentArray(instance) {
-  return instance.array[this.lastIndex];
+function getIndexObject() {
+  return this.keys[this.lastIndex];
 }
 
-function getCurrentObject(instance) {
-  return instance.array[instance.keys[instance.lastIndex]];
+function getCurrentArray() {
+  return this.array[this.lastIndex];
 }
 
-function nextArray(instance) {
+function getCurrentObject() {
+  return this.array[this.keys[this.lastIndex]];
+}
+
+function nextArray() {
   var result = null;
-  if (instance.hasNext()) {
-    result = instance.array[++instance.lastIndex];
+  if (this.hasNext()) {
+    result = this.array[++this.lastIndex];
   }
   return result;
 }
 
-function nextObject(instance) {
+function nextObject() {
   var result = null;
-  if (instance.hasNext()) {
-    result = instance.array[instance.keys[++instance.lastIndex]];
+  if (this.hasNext()) {
+    result = this.array[this.keys[++this.lastIndex]];
   }
   return result;
 }
 
-function prevArray(instance) {
+function prevArray() {
   var result = null;
-  if (instance.hasPrev()) {
-    result = instance.array[--instance.lastIndex];
+  if (this.hasPrev()) {
+    result = this.array[--this.lastIndex];
   }
   return result;
 }
 
-function prevObject(instance) {
+function prevObject() {
   var result = null;
-  if (instance.hasPrev()) {
-    result = instance.array[instance.keys[--instance.lastIndex]];
+  if (this.hasPrev()) {
+    result = this.array[this.keys[--this.lastIndex]];
   }
   return result;
 }
