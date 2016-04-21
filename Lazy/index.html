@@ -1,8 +1,7 @@
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="../statics/css/style.css"/>
     <title>Lazy Pattern</title>
-    <script type="text/javascript" src="Lazy.js"></script>
     <style type="text/css">
         #test {
             margin-left: 40px;
@@ -17,18 +16,21 @@
 <div id="source">
     <h2>Source</h2>
             <pre>
-    var nCounter = 0;
-    var aElements = ['Zero', 'First', 'Second', 'Third', 'Fourth'];
-    var nIdTimeout = 0;
-    var oLazy = new Lazy(document.getElementById('test'), aElements[nCounter], new Date());
-    nIdTimeout = setInterval(function()
-    {
-        if(nCounter === 4)
-        {
-            clearInterval(nIdTimeout);
-        }
-        oLazy.update(aElements[nCounter++], new Date());
-    }, 500);
+import Lazy from './Lazy';
+
+let counter = 0;
+const elements = ['Zero', 'First', 'Second', 'Third', 'Fourth'];
+
+let timeout = null;
+let lazy = new Lazy(document.getElementById('test'), elements[counter], new Date());
+
+timeout = setInterval(function() {
+  if (counter === 4) {
+    clearInterval(timeout);
+  }
+  lazy.update(aElements[counter++], new Date());
+}, 500);
+
             </pre>
 </div>
 <div id="console">
@@ -37,18 +39,7 @@
     <ul></ul>
     <h1>Lazy</h1>
 </div>
-<script type="text/javascript" src="../js/utils.js"></script>
-<script type="text/javascript">
-    var nCounter = 0;
-    var aElements = ['Zero', 'First', 'Second', 'Third', 'Fourth'];
-    var nIdTimeout = 0;
-    var oLazy = new Lazy(document.getElementById('test'), aElements[nCounter], new Date());
-    nIdTimeout = setInterval(function() {
-        if (nCounter === 4) {
-            clearInterval(nIdTimeout);
-        }
-        oLazy.update(aElements[nCounter++], new Date());
-    }, 500);
-</script>
+<script type="text/javascript" src="../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
 </body>
 </html>
