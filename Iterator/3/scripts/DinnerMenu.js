@@ -1,6 +1,6 @@
 import Menu from '../../common/Menu';
-import MenuItem from '../../common/MenuItem';
 import Iterator from '../../common/Iterator';
+import MenuItem from '../../common/MenuItem';
 
 const MAX_ITEMS = 6;
 
@@ -12,15 +12,14 @@ class DinnerMenu extends Menu {
     this.addItem("Soup of the day", "Soup of the day, with a side of potato salad", false, 3.29);
     this.addItem("Hotdog", "A hotdog with saurkraut, relish, onions, topped with cheese", false, 3.05);
   }
-
+  createIterator() {
+    return new Iterator(this.menuItems);
+  }
   addItem(name, description, isVegetarian, price) {
-    if(this.length === MAX_ITEMS) {
+    if (this.length === MAX_ITEMS) {
       throw new Error("Sorry menu is full! Can't add item to menu");
     }
     super.addItem(new MenuItem(name, description, isVegetarian, price));
-  }
-  createIterator() {
-    return new Iterator(this.menuItems);
   }
 }
 

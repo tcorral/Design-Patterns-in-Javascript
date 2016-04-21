@@ -1,6 +1,6 @@
 import Menu from '../../common/Menu';
-import MenuItem from '../../common/MenuItem';
 import Iterator from '../../common/Iterator';
+import MenuItem from '../../common/MenuItem';
 
 class PancakeHouseMenu extends Menu {
   constructor() {

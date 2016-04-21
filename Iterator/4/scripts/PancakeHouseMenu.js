@@ -10,13 +10,11 @@ class PancakeHouseMenu extends Menu {
     this.addItem("Blueberry Pancakes", "Pancakes made with fresh blueberries", true, 3.49);
     this.addItem("Waffles", "Waffles, with your choice of blueberries or strawberries", true, 3.59);
   }
-
-  addItem(name, description, isVegetarian, price) {
-    super.addItem(new MenuItem(name, description, isVegetarian, price));
-  }
-
   createIterator() {
     return new Iterator(this.menuItems);
+  }
+  addItem(name, description, isVegetarian, price) {
+    super.addItem(new MenuItem(name, description, isVegetarian, price));
   }
 }
 
