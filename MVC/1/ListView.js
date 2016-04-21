@@ -1,3 +1,3 @@
-var ListView = function(oElement){
-	return oElement;
+var ListView = function(oElement) {
+  return oElement;
 };

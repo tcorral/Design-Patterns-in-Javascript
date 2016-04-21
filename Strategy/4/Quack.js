@@ -1,7 +1,7 @@
-var Quack = function(){
-	QuackBehavior.apply(this);
+var Quack = function() {
+  QuackBehavior.apply(this);
 };
 Quack.prototype = new QuackBehavior();
-Quack.prototype.quack = function(){
-	alert("Quack!");
+Quack.prototype.quack = function() {
+  alert("Quack!");
 };

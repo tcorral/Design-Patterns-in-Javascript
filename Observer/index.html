@@ -1,32 +1,32 @@
 <html>
-  <head>
+<head>
     <link type="text/css" rel="stylesheet" href="../css/style.css"/>
-	<title>Observer Pattern</title>
-	<script type="text/javascript" src="Subject.js"></script>
-	<script type="text/javascript" src="Observer.js"></script>
-	<script type="text/javascript" src="Display.js"></script>
-	<script type="text/javascript" src="WeatherData.js"></script>
-	<script type="text/javascript" src="CurrentConditionsDisplay.js"></script>
-  </head>
-  <body>
-    <div id="source">
-      <h2>Source</h2>
+    <title>Observer Pattern</title>
+    <script type="text/javascript" src="Subject.js"></script>
+    <script type="text/javascript" src="Observer.js"></script>
+    <script type="text/javascript" src="Display.js"></script>
+    <script type="text/javascript" src="WeatherData.js"></script>
+    <script type="text/javascript" src="CurrentConditionsDisplay.js"></script>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
       <pre>
 var oWeatherData = new WeatherData();
 var oCurrentConditionsDisplay = new CurrentConditionsDisplay(oWeatherData);
 oWeatherData.setMeasurements(80, 65, 30.4);
       </pre>
-    </div>
-    <div id="console">
-    	<h2>Console</h2>
-	    <ul></ul>
-	    <h1>OBSERVER</h1>
-    </div>
-    <script type="text/javascript" src="../js/utils.js"></script>
-    <script type="text/javascript">
-		var oWeatherData = new WeatherData();
-		var oCurrentConditionsDisplay = new CurrentConditionsDisplay(oWeatherData);
-		oWeatherData.setMeasurements(80, 65, 30.4);
-    </script>
-  </body>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>OBSERVER</h1>
+</div>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript">
+    var oWeatherData = new WeatherData();
+    var oCurrentConditionsDisplay = new CurrentConditionsDisplay(oWeatherData);
+    oWeatherData.setMeasurements(80, 65, 30.4);
+</script>
+</body>
 </html>

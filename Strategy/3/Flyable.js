@@ -1,5 +1,5 @@
-var Flyable = function(fpCallback){
-	this.fly = function(){
-		fpCallback();
-	};
+var Flyable = function(fpCallback) {
+  this.fly = function() {
+    fpCallback();
+  };
 };

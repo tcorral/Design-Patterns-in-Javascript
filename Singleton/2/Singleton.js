@@ -1,16 +1,12 @@
-var Singleton = function()
-{
-	if(Singleton.instance == null)
-	{
-		Singleton.instance = this;
-	}
-	return Singleton.instance;
+var Singleton = function() {
+  if (Singleton.instance == null) {
+    Singleton.instance = this;
+  }
+  return Singleton.instance;
 };
-Singleton.prototype.toString = function()
-{
-	return "[object Singleton]";
+Singleton.prototype.toString = function() {
+  return "[object Singleton]";
 };
-Singleton.getInstance = function()
-{
-	return new Singleton();
+Singleton.getInstance = function() {
+  return new Singleton();
 };

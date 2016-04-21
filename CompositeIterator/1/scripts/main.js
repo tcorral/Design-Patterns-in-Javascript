@@ -1,6 +1,6 @@
-import Menu from './Menu';
-import MenuItem from './MenuItem';
-import Mattress from './Mattress';
+import Menu from '../../common/Menu';
+import MenuItem from '../../common/MenuItem';
+import Mattress from '../../common/Mattress';
 
 var oPanCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
 var oDinnerMenu = new Menu("Dinner Menu", "Lunch");

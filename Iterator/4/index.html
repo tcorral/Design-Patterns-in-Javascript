@@ -1,37 +1,37 @@
 <html>
-  <head>
+<head>
     <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
-	<title>Iterator Pattern</title>
-	<script type="text/javascript" src="Menu.js"></script>
-	<script type="text/javascript" src="MenuItem.js"></script>
-	<script type="text/javascript" src="DinnerMenu.js"></script>
-	<script type="text/javascript" src="PancakeHouseMenu.js"></script>
-	<script type="text/javascript" src="CafeMenu.js"></script>
-	<script type="text/javascript" src="Iterator.js"></script>
-	<script type="text/javascript" src="DinnerMenuIterator.js"></script>
-	<script type="text/javascript" src="PancakeHouseMenuIterator.js"></script>
-	<script type="text/javascript" src="CafeMenuIterator.js"></script>
-	<script type="text/javascript" src="Mattress.js"></script>
-  </head>
-  <body>
-    <div id="source">
-      <h2>Source</h2>
+    <title>Iterator Pattern</title>
+    <script type="text/javascript" src="Menu.js"></script>
+    <script type="text/javascript" src="MenuItem.js"></script>
+    <script type="text/javascript" src="DinnerMenu.js"></script>
+    <script type="text/javascript" src="PancakeHouseMenu.js"></script>
+    <script type="text/javascript" src="CafeMenu.js"></script>
+    <script type="text/javascript" src="Iterator.js"></script>
+    <script type="text/javascript" src="DinnerMenuIterator.js"></script>
+    <script type="text/javascript" src="PancakeHouseMenuIterator.js"></script>
+    <script type="text/javascript" src="CafeMenuIterator.js"></script>
+    <script type="text/javascript" src="Mattress.js"></script>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
       <pre>
 var oMattress = new Mattress([new PancakeHouseMenu(), new DinnerMenu(), new CafeMenu()]);
 oMattress.printMenu();
       </pre>
-    </div>
-    <div id="console">
-    	<h2>Console</h2>
-	    <ul></ul>
-	    <h1>ITERATOR</h1>
-    </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
-    <script type="text/javascript">
-		var oMattress = new Mattress([new PancakeHouseMenu(), new DinnerMenu(), new CafeMenu()]);
-		console.log("---------------------------------------------");
-		oMattress.printMenu();
-		console.log("---------------------------------------------");
-    </script>
-  </body>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>ITERATOR</h1>
+</div>
+<script type="text/javascript" src="../../js/utils.js"></script>
+<script type="text/javascript">
+    var oMattress = new Mattress([new PancakeHouseMenu(), new DinnerMenu(), new CafeMenu()]);
+    console.log("---------------------------------------------");
+    oMattress.printMenu();
+    console.log("---------------------------------------------");
+</script>
+</body>
 </html>

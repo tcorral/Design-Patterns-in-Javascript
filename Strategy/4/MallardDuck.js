@@ -1,9 +1,9 @@
-var MallardDuck = function(){
-	Duck.apply(this);
-	this.oFlyBehavior = new FlyWithWings();
-	this.oQuackBehavior = new Quack();
+var MallardDuck = function() {
+  Duck.apply(this);
+  this.oFlyBehavior = new FlyWithWings();
+  this.oQuackBehavior = new Quack();
 };
 MallardDuck.prototype = new Duck();
-MallardDuck.prototype.display = function(){
-	alert("MallardDuck show");
+MallardDuck.prototype.display = function() {
+  alert("MallardDuck show");
 };

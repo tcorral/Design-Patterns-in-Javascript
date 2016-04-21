@@ -1,17 +1,9 @@
-import Command from './Command';
+import LightOnCommand from '../../common/LightOnCommand';;
 
-class LightOnCommand extends Command{
-	constructor(light) {
-		super();
-		this.light = light;
-		return this;
-	}
-	execute() {
-		this.light.on();
-	}
+class LightOnCommand2 extends LightOnCommand{
 	undo() {
 		this.light.off();
 	}
 }
 
-export default LightOnCommand;
+export default LightOnCommand2;

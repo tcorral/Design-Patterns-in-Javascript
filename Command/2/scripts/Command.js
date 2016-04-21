@@ -1,10 +1,9 @@
-class Command {
-	execute() {
-		throw new Error('This method must be overwritten!');
-	}
-	undo() {
-		throw new Error('This method must be overwritten!');
-	}
+import Command from '../../common/Command';
+
+class Command2 extends Command {
+  undo() {
+    throw new Error('This method must be overwritten!');
+  }
 }
 
-export default Command;
+export default Command2;

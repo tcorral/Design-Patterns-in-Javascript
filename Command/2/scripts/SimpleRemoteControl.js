@@ -1,16 +1,9 @@
-class SimpleRemoteControl {
-	constructor() {
-		this.command = null;
-	}
-	setCommand(command) {
-		this.command = command;
-	}
-	buttonWasPressed() {
-		this.command.execute();
-	}
+import SimpleRemoteControl from '../../common/SimpleRemoteControl';
+
+class SimpleRemoteControl2 extends SimpleRemoteControl {
 	buttonUndoWasPressed() {
 		this.command.undo();
 	}
 }
 
-export default SimpleRemoteControl;
+export default SimpleRemoteControl2;

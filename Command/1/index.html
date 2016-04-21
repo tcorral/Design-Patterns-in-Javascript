@@ -1,11 +1,11 @@
 <html>
-  <head>
-    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
     <title>Command Pattern</title>
-  </head>
-  <body>
-    <div id="source">
-      <h2>Source</h2>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
       <pre>
 import Light from './Light';
 import LightOnCommand from './LightOnCommand';
@@ -18,13 +18,13 @@ let oLightCommand = new LightOnCommand(oLight);
 oSimpleRemote.setCommand(oLightCommand);
 oSimpleRemote.buttonWasPressed();
       </pre>
-    </div>
-    <div id="console">
-    	<h2>Console</h2>
-	    <ul></ul>
-	    <h1>COMMAND</h1>
-    </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
-    <script type="text/javascript" src="dist/scripts/main.js"></script>
-  </body>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>COMMAND</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
 </html>

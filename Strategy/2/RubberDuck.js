@@ -1,13 +1,13 @@
-var RubberDuck = function(){
-	Duck.apply(this);
+var RubberDuck = function() {
+  Duck.apply(this);
 };
 RubberDuck.prototype = new Duck();
-RubberDuck.prototype.display = function(){
-	alert("RubberDuck show");
+RubberDuck.prototype.display = function() {
+  alert("RubberDuck show");
 };
-RubberDuck.prototype.quack = function(){
-	alert("Squeak");
+RubberDuck.prototype.quack = function() {
+  alert("Squeak");
 };
-RubberDuck.prototype.fly = function(){
-	// Don't do anything.
+RubberDuck.prototype.fly = function() {
+  // Don't do anything.
 };

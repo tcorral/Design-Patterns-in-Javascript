@@ -1,6 +1,6 @@
-import Light from './Light';
-import LightOnCommand from './LightOnCommand';
-import SimpleRemoteControl from './SimpleRemoteControl';
+import Light from '../../common/Light';
+import LightOnCommand from '../../common/LightOnCommand';
+import SimpleRemoteControl from '../../common/SimpleRemoteControl';
 
 let oSimpleRemote = new SimpleRemoteControl();
 let oLight = new Light();

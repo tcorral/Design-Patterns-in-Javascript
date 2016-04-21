@@ -1,25 +1,25 @@
 <html>
-  <head>
-    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
     <title>Compound Pattern</title>
-	<script type="text/javascript" src="Quackable.js"></script>
-	<script type="text/javascript" src="DuckCall.js"></script>
-	<script type="text/javascript" src="MallardDuck.js"></script>
-	<script type="text/javascript" src="RedheadDuck.js"></script>
-	<script type="text/javascript" src="RubberDuck.js"></script>
-	<script type="text/javascript" src="Goose.js"></script>
-	<script type="text/javascript" src="GooseAdapter.js"></script>
-  </head>
-  <body>
-    <div id="source">
-      <h2>Source</h2>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
       <pre>
-var oMallardDuck = new MallardDuck();
-var oDuckCall = new DuckCall();
-var oRedheadDuck = new RedheadDuck();
-var oRubberDuck = new RubberDuck();
-var oGoose = new Goose();
-var oGooseAdapter = new GooseAdapter(oGoose);
+import MallardDuck from './MallardDuck';
+import DuckCall from './DuckCall';
+import RedheadDuck from './RedheadDuck';
+import RubberDuck from './RubberDuck';
+import Goose from './Goose';
+import GooseAdapter from './GooseAdapter';
+
+let oMallardDuck = new MallardDuck();
+let oDuckCall = new DuckCall();
+let oRedheadDuck = new RedheadDuck();
+let oRubberDuck = new RubberDuck();
+let oGoose = new Goose();
+let oGooseAdapter = new GooseAdapter(oGoose);
 
 console.log("Duck simulator:");
 
@@ -27,30 +27,15 @@ oMallardDuck.quack();
 oDuckCall.quack();
 oRedheadDuck.quack();
 oRubberDuck.quack();
-oGooseAdapter.quack()
+oGooseAdapter.quack();
       </pre>
-    </div>
-    <div id="console">
-    	<h2>Console</h2>
-	    <ul></ul>
-	    <h1>COMPOUND</h1>
-    </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
-    <script type="text/javascript">
-		var oMallardDuck = new MallardDuck();
-		var oDuckCall = new DuckCall();
-		var oRedheadDuck = new RedheadDuck();
-		var oRubberDuck = new RubberDuck();
-		var oGoose = new Goose();
-		var oGooseAdapter = new GooseAdapter(oGoose);
-
-		console.log("Duck simulator:");
-
-		oMallardDuck.quack();
-		oDuckCall.quack();
-		oRedheadDuck.quack();
-		oRubberDuck.quack();
-		oGooseAdapter.quack()
-    </script>
-  </body>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>COMPOUND</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="./dist/scripts/main.js"></script>
+</body>
 </html>

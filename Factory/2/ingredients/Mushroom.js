@@ -1,3 +1,0 @@
-var Mushroom = function(){
-
-};

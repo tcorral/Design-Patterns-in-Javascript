@@ -1,5 +1,5 @@
-import Menu from './Menu';
-import MenuItem from './MenuItem';
+import Menu from '../../common/Menu';
+import MenuItem from '../../common/MenuItem';
 import Mattress from './Mattress';
 
 let panCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
@@ -15,6 +15,7 @@ dinnerMenu.add(new MenuItem("Pasta",
   true,
   3.89));
 dinnerMenu.add(coffeeMenu);
+
 
 coffeeMenu.add(new MenuItem("Express", "Coffee from machine", false, 0.99));
 
