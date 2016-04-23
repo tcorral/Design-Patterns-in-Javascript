@@ -1,3 +1,4 @@
-var Onion = function() {
+class Onion  {}
 
-};
+export default Onion;
+

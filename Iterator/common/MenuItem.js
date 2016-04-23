@@ -19,7 +19,7 @@ class MenuItem {
   }
 
   isVegetarian() {
-    return this.bVegetarian;
+    return this._isVegetarian;
   }
 }
 

@@ -1,9 +1,10 @@
 import Quackable from './Quackable';
 
-var counter = 0;
+let counter = 0;
 class QuackCounter extends Quackable {
   constructor(duck) {
     super();
+    counter = 0;
     this.duck = duck;
   }
 

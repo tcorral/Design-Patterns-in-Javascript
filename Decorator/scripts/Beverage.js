@@ -1,6 +1,6 @@
 class Beverage {
-  constructor(description) {
-    this.description = description || 'Unknown beverage';
+  constructor(description = 'Unknown beverage') {
+    this.description = description;
   }
 
   getDescription() {

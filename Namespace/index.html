@@ -16,9 +16,12 @@
 <div id="source">
     <h2>Source</h2>
             <pre>
-    App.DOM.byId('test');
-    var oAjax = new App.Ajax();
-    oAjax.setUp().call();
+import Namespace from './Namespace';
+
+Namespace.DOM.byId('test');
+
+let ajax = new Namespace.Ajax();
+ajax.setUp().call();
             </pre>
 </div>
 <div id="console">

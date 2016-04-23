@@ -5,15 +5,19 @@ class MenuItem {
     this._isVegetarian = isVegetarian;
     this.price = price;
   }
+
   getName() {
     return this.name;
   }
+
   getDescription() {
     return this.description;
   }
+
   getPrice() {
     return this.price;
   }
+
   isVegetarian() {
     return this._isVegetarian;
   }

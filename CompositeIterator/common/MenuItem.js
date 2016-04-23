@@ -1,5 +1,4 @@
 import MenuComponent from './MenuComponent';
-import NullIterator from './NullIterator';
 
 class MenuItem extends MenuComponent {
   getName() {
@@ -19,7 +18,8 @@ class MenuItem extends MenuComponent {
   }
 
   createIterator() {
-    return new NullIterator();
+    var arr = [];
+    return arr[Symbol.iterator]();
   }
 }
 

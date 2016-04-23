@@ -14,11 +14,12 @@ class DinnerMenu extends Menu {
   }
 
   addItem(name, description, isVegetarian, price) {
-    if(this.length === MAX_ITEMS) {
+    if (this.length === MAX_ITEMS) {
       throw new Error("Sorry menu is full! Can't add item to menu");
     }
     super.addItem(new MenuItem(name, description, isVegetarian, price));
   }
+
   createIterator() {
     return new Iterator(this.menuItems);
   }

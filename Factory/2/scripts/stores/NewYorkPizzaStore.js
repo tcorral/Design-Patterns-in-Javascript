@@ -5,7 +5,6 @@ import VeggiePizza from '../pizzas/VeggiePizza';
 import ClamPizza from '../pizzas/ClamPizza';
 import PepperoniPizza from '../pizzas/PepperoniPizza';
 
-
 const PIZZAS = {
   cheese: CheesePizza,
   veggie: VeggiePizza,

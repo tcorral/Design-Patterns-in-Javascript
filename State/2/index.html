@@ -11,17 +11,19 @@
 <div id="source">
     <h2>Source</h2>
       <pre>
+import GumballMachine from './GumballMachine';
+
 var oGumballMachine = new GumballMachine();
 
-$("#insert_quarter_button").click(function(){
-	oGumballMachine.insertQuarter();
+$("#insert_quarter_button").click(function() {
+  oGumballMachine.insertQuarter();
 });
-$("#release_quarter_button").click(function(){
-	oGumballMachine.ejectQuarter();
+$("#release_quarter_button").click(function() {
+  oGumballMachine.ejectQuarter();
 });
-$("#turn_crunk_button").click(function(){
-	oGumballMachine.turnCrank();
-	oGumballMachine.dispense();
+$("#turn_crank_button").click(function() {
+  oGumballMachine.turnCrank();
+  oGumballMachine.dispense();
 });
       </pre>
 </div>

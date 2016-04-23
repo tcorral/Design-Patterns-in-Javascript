@@ -1,6 +1,6 @@
 import FlyBehavior from './FlyBehavior';
 
-class FlyWithWings extends FlyBehavior{
+class FlyWithWings extends FlyBehavior {
   fly() {
     console.log('Flap!Flap!');
   }

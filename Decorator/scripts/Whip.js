@@ -5,9 +5,11 @@ class Whip extends CondimentDecorator {
     super();
     this.beverage = beverage;
   }
-  getDescription () {
+
+  getDescription() {
     return this.beverage.getDescription() + ', Whip';
   }
+
   cost() {
     return 0.60 + this.beverage.cost();
   }

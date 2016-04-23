@@ -1,8 +1,8 @@
-import AbstractDuckFactory from '../../common/AbstractDuckFactory';
-import MallardDuck from '../../common/MallardDuck';
-import RedheadDuck from '../../common/RedheadDuck';
-import DuckCall from '../../common/DuckCall';
-import RubberDuck from '../../common/RubberDuck';
+import AbstractDuckFactory from './AbstractDuckFactory';
+import MallardDuck from './MallardDuck';
+import RedheadDuck from './RedheadDuck';
+import DuckCall from './DuckCall';
+import RubberDuck from './RubberDuck';
 
 class DuckFactory extends AbstractDuckFactory {
   createMallardDuck() {

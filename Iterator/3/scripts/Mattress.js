@@ -1,7 +1,8 @@
 function printMenu(iterator) {
-  while(iterator.hasNext()) {
-    let menuItem = iterator.next();
-    console.log(menuItem.getName() + ": " + menuItem.getDescription() + ", " + menuItem.getPrice() + "eur.");
+  let menuItem = iterator.next();
+  while(menuItem.value) {
+    console.log(menuItem.value.getName() + ": " + menuItem.value.getDescription() + ", " + menuItem.value.getPrice() + "eur.");
+    menuItem = iterator.next();
   }
 }
 
@@ -27,19 +28,22 @@ class Mattress {
   isItemVegetarian(name) {
     var iteratorPancakeHouseMenu = this.pancakeHouseMenu.createIterator();
     var iteratorDinnerMenu = this.dinnerMenu.createIterator();
+    let menuItem = iteratorPancakeHouseMenu.next();
 
-    while(iteratorPancakeHouseMenu.hasNext()) {
-      let menuItem = iteratorPancakeHouseMenu.next();
-      if(menuItem.name === name) {
-        return menuItem.isVegetarian();
+    while(menuItem.value) {
+      menuItem = iteratorPancakeHouseMenu.next();
+      if(menuItem.value.name === name) {
+        return menuItem.value.isVegetarian();
       }
     }
 
-    while(iteratorDinnerMenu.hasNext()) {
-      let menuItem = iteratorDinnerMenu.next();
-      if(menuItem.name === name) {
-        return menuItem.isVegetarian();
+    menuItem = iteratorDinnerMenu.next();
+
+    while(menuItem.value) {
+      if(menuItem.value.name === name) {
+        return menuItem.value.isVegetarian();
       }
+      menuItem = iteratorDinnerMenu.next();
     }
 
     throw new Error("Sorry, but we don't have this in our menu!");

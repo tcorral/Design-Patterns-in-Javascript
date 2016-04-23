@@ -8,6 +8,7 @@ class RubberDuck extends Duck {
     this.flyBehavior = new FlyNoWay();
     this.quackBehavior = new Squeak();
   }
+
   display() {
     console.log("RubberDuck show");
   }

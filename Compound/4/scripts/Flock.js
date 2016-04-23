@@ -1,6 +1,5 @@
 import Observable from './Observable';
 import Flock from '../../common/Flock';
-import ConvertToIterator from '../../../common/ConvertToIterator';
 
 class FlockObservable extends Flock {
   constructor() {

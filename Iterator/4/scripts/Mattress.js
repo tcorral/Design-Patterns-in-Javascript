@@ -1,7 +1,8 @@
 function printMenu(iterator) {
-  while(iterator.hasNext()) {
-    let menuItem = iterator.next();
-    console.log(menuItem.getName() + ": " + menuItem.getDescription() + ", " + menuItem.getPrice() + "eur.");
+  let menuItem = iterator.next();
+  while(menuItem.value) {
+    console.log(menuItem.value.getName() + ": "  + menuItem.value.getDescription() + ", " + menuItem.value.getPrice() + "eur.");
+    menuItem = iterator.next();
   }
 }
 

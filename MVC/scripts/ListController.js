@@ -1,4 +1,4 @@
-import $ from './FakeJquery';
+import $ from './jquery';
 
 class ListController {
   constructor(view, model) {

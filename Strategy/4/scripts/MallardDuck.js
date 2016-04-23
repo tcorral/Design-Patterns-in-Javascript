@@ -8,6 +8,7 @@ class MallardDuck extends Duck {
     this.flyBehavior = new FlyWithWings();
     this.quackBehavior = new QuackBehavior();
   }
+
   display() {
     console.log('MallardDuck show');
   }

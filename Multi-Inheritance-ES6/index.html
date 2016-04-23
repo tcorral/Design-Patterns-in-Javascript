@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../statics/css/style.css"/>
+    <title>Multi-Inheritance Pattern</title>
+    <style type="text/css">
+        #test {
+            margin-left: 40px;
+        }
+
+        #test span {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+            <pre>
+import Duck from './Duck';
+
+var duck = new Duck();
+
+duck.fly();
+duck.quack();
+duck.swim();
+            </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <div id="test"></div>
+    <ul></ul>
+    <h1>Multi-Inheritance ES6</h1>
+</div>
+<script type="text/javascript" src="../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>

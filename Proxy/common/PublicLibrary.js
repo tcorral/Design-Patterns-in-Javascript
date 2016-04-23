@@ -16,12 +16,9 @@ class PublicLibrary {
   findBooks(query) {
     console.log("Enter findBooks PublicLibrary");
     let results = [];
-    for(let isbn in this.catalog) {
-      if(this.catalog.hasOwnProperty(isbn)) {
-        let book = this.catalog[sIsbn];
-        if (query.match(book.getTitle()) || query.match(book.getAuthor())) {
-          results.push(book);
-        }
+    for(let book of this.catalog) {
+      if (query.match(book.getTitle()) || query.match(book.getAuthor())) {
+        results.push(book);
       }
     }
     return results;

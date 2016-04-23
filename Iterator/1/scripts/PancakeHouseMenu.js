@@ -1,7 +1,7 @@
 import Menu from './Menu';
 import MenuItem from './MenuItem';
 
-class PancakeHouseMenu extends Menu{
+class PancakeHouseMenu extends Menu {
   constructor() {
     super();
     this.addItem("K&B's Pancake Breakfast", "Pancakes with scrambled eggs, and toast", true, 2.99);

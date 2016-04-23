@@ -1,7 +1,7 @@
 import PublicLibrary from '../../common/PublicLibrary';
 
 class PublicLibraryProxy {
-  constructor(catalog) {
+  constructor(catalog = []) {
     this.library = new PublicLibrary(catalog);
   }
 

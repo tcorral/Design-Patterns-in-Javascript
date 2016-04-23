@@ -11,16 +11,18 @@
 <div id="source">
     <h2>Source</h2>
       <pre>
+import Download from './Download';
+
 var oDownload = new Download();
 
-$("#download_button").click(function(){
-	oDownload.download();
+$("#download_button").click(function() {
+  oDownload.download();
 });
-$("#pause_button").click(function(){
-	oDownload.pause();
+$("#pause_button").click(function() {
+  oDownload.pause();
 });
-$("#resume_button").click(function(){
-	oDownload.download();
+$("#resume_button").click(function() {
+  oDownload.download();
 });
       </pre>
 </div>

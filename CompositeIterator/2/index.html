@@ -7,8 +7,8 @@
     <div id="source">
       <h2>Source</h2>
       <pre>
-import Menu from './Menu';
-import MenuItem from './MenuItem';
+import Menu from '../../common/Menu';
+import MenuItem from '../../common/MenuItem';
 import Mattress from './Mattress';
 
 let panCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
@@ -25,13 +25,13 @@ dinnerMenu.add(new MenuItem("Pasta",
   3.89));
 dinnerMenu.add(coffeeMenu);
 
+
 coffeeMenu.add(new MenuItem("Express", "Coffee from machine", false, 0.99));
 
 let mattress = new Mattress(allMenus);
 console.log("---------------------------------------------");
 mattress.printVegetarianMenu();
 console.log("---------------------------------------------");
-
       </pre>
     </div>
     <div id="console">

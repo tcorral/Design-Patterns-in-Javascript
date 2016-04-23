@@ -16,8 +16,10 @@
 <div id="source">
     <h2>Source</h2>
             <pre>
-    var oModule = Module();
-    oModule.init();
+import Module from './Module';
+
+var oModule = Module(document.getElementById('test'));
+oModule.init();
             </pre>
 </div>
 <div id="console">

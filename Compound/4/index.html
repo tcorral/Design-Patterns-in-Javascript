@@ -14,27 +14,27 @@ import Flock from './Flock';
 import Quackologist from './Quackologist';
 import QuackCounter from '../../common/QuackCounter';
 
-var oDuckFactory = new CountingDuckFactory();
-var oMallardDuck = oDuckFactory.createMallardDuck();
-var oDuckCall = oDuckFactory.createDuckCall();
-var oRedheadDuck = oDuckFactory.createRedheadDuck();
-var oRubberDuck = oDuckFactory.createRubberDuck();
-var oGoose = new Goose();
-var oGooseAdapter = new GooseAdapter(oGoose);
+let oDuckFactory = new CountingDuckFactory();
+let oMallardDuck = oDuckFactory.createMallardDuck();
+let oDuckCall = oDuckFactory.createDuckCall();
+let oRedheadDuck = oDuckFactory.createRedheadDuck();
+let oRubberDuck = oDuckFactory.createRubberDuck();
+let oGoose = new Goose();
+let oGooseAdapter = new GooseAdapter(oGoose);
 
-var oFlockOfDucks = new Flock();
+let oFlockOfDucks = new Flock();
 oFlockOfDucks.add(oMallardDuck);
 oFlockOfDucks.add(oDuckCall);
 oFlockOfDucks.add(oRedheadDuck);
 oFlockOfDucks.add(oRubberDuck);
 oFlockOfDucks.add(oGooseAdapter);
 
-var oFlockOfMallards = new Flock();
+let oFlockOfMallards = new Flock();
 
-var oMallardDuck1 = oDuckFactory.createMallardDuck();
-var oMallardDuck2 = oDuckFactory.createMallardDuck();
-var oMallardDuck3 = oDuckFactory.createMallardDuck();
-var oMallardDuck4 = oDuckFactory.createMallardDuck();
+let oMallardDuck1 = oDuckFactory.createMallardDuck();
+let oMallardDuck2 = oDuckFactory.createMallardDuck();
+let oMallardDuck3 = oDuckFactory.createMallardDuck();
+let oMallardDuck4 = oDuckFactory.createMallardDuck();
 
 oFlockOfMallards.add(oMallardDuck1);
 oFlockOfMallards.add(oMallardDuck2);
@@ -45,7 +45,7 @@ oFlockOfDucks.add(oFlockOfMallards);
 
 console.log("Duck simulator with Observer");
 
-var oQuackologist = new Quackologist();
+let oQuackologist = new Quackologist();
 
 oFlockOfDucks.registerObserver(oQuackologist);
 

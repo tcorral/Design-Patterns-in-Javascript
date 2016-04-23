@@ -12,9 +12,9 @@ class Pizza {
     console.log("Adding sauce");
     console.log("Adding toppings:");
 
-    this.toppings.forEach(function(topping) {
+    for (let topping of this.toppings) {
       console.log(topping + "  ");
-    });
+    }
   }
 
   bake() {

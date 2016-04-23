@@ -9,6 +9,7 @@ class MenuComponent {
   isVegetarian() {
     return !!this._isVegetarian;
   }
+
   getName() {
     throw new Error("This method must be overwritten!");
   }

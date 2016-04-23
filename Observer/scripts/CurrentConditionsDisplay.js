@@ -10,6 +10,7 @@ class CurrentConditionsDisplay extends Observer(Display(null)) {
     this.subject = subject;
     this.subject.registerObserver(this);
   }
+
   update(temperature, humidity, pressure) {
     this.temperature = temperature;
     this.humidity = humidity;

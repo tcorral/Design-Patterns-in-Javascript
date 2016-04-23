@@ -1,10 +1,10 @@
 class Mattress {
   constructor(aMenus) {
-    this.aMenus = aMenus;
+    this.menus = aMenus;
   }
 
   printMenu() {
-    this.aMenus.print();
+    this.menus.print();
   }
 }
 

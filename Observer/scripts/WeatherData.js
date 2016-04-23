@@ -8,6 +8,7 @@ class WeatherData extends Subject {
     this.humidity = 0;
     this.pressure = 0;
   }
+
   registerObserver(observer) {
     this.observers[observer.id] = observer;
   }
@@ -15,6 +16,7 @@ class WeatherData extends Subject {
   removeObserver(observer) {
     delete this.observers[observer.id];
   }
+
   notifyObservers() {
     for (let observerId in this.observers) {
       if (this.observers.hasOwnProperty(observerId)) {
@@ -22,9 +24,11 @@ class WeatherData extends Subject {
       }
     }
   }
+
   measurementsChanged() {
     this.notifyObservers();
   }
+
   setMeasurements(temperature, humidity, pressure) {
     this.temperature = temperature;
     this.humidity = humidity;

@@ -6,18 +6,21 @@ import RubberDuck from '../../common/RubberDuck';
 import QuackCounter from '../../common/QuackCounter';
 
 class CountingDuckFactory extends AbstractDuckFactory {
-	createMallardDuck() {
-		return new QuackCounter(new MallardDuck());
-	}
-	createRedheadDuck() {
-		return new QuackCounter(new RedheadDuck());
-	}
-	createDuckCall() {
-		return new QuackCounter(new DuckCall());
-	}
-	createRubberDuck() {
-		return new QuackCounter(new RubberDuck());
-	}
+  createMallardDuck() {
+    return new QuackCounter(new MallardDuck());
+  }
+
+  createRedheadDuck() {
+    return new QuackCounter(new RedheadDuck());
+  }
+
+  createDuckCall() {
+    return new QuackCounter(new DuckCall());
+  }
+
+  createRubberDuck() {
+    return new QuackCounter(new RubberDuck());
+  }
 }
 
 export default CountingDuckFactory;

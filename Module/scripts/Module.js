@@ -1,4 +1,4 @@
-function Module (container) {
+function Module(container) {
   return new class {
     get container() {
       return container;
@@ -10,6 +10,7 @@ function Module (container) {
 
     destroy() {
       this.container.innerHTML = '';
+      delete this.container;
     }
   }
 }

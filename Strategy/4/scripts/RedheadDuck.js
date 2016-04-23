@@ -8,6 +8,7 @@ class RedheadDuck extends Duck {
     this.flyBehavior = new FlyWithWings();
     this.quackBehavior = new Quack();
   }
+
   display() {
     console.log("RedheadDuck show");
   }

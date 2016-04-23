@@ -1,34 +1,41 @@
 class MenuComponent {
+  constructor(name = '', description = '', isVegetarian = false, price = 0) {
+    this.name = name;
+    this.description = description;
+    this._isVegetarian = isVegetarian;
+    this.price = price;
+  }
+
   getName() {
-    throw new Error('This method must be overwritten!');
+    return this.name;
   }
 
   getDescription() {
-    throw new Error('This method must be overwritten!');
+    return this.description;
   }
 
   getPrice() {
-    throw new Error('This method must be overwritten!');
+    return this.price;
   }
 
   isVegetarian() {
-    throw new Error('This method must be overwritten!');
+    return this._isVegetarian;
   }
 
   print() {
-    throw new Error('This method must be overwritten!');
+    shouldBeOverwritten();
   }
 
   add() {
-    throw new Error('This method must be overwritten!');
+    shouldBeOverwritten();
   }
 
   remove() {
-    throw new Error('This method must be overwritten!');
+    shouldBeOverwritten();
   }
 
   getChild() {
-    throw new Error('This method must be overwritten!');
+    shouldBeOverwritten();
   }
 }
 

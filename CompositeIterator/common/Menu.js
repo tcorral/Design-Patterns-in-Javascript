@@ -1,6 +1,4 @@
 import MenuComponent from './MenuComponent';
-import CompositeIterator from './CompositeIterator';
-import ConvertToIterator from '../../common/ConvertToIterator';
 
 class Menu extends MenuComponent {
   constructor(name, description) {
@@ -37,14 +35,14 @@ class Menu extends MenuComponent {
     console.log(this.getName() + ": " + this.getDescription());
     console.log("--------------------------------------------");
 
-    this.menuComponents.forEach(component => {
+    for(let component of this.menuComponents) {
       component.print();
-    });
+    }
   }
 
   createIterator() {
     if (this.iterator === null) {
-      this.iterator = new CompositeIterator(new ConvertToIterator(this.menuComponents));
+      this.iterator = this.menuComponents[Symbol.iterator]();
     }
     return this.iterator;
   };

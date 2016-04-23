@@ -8,6 +8,7 @@ class DecoyDuck extends Duck {
     this.flyBehavior = new FlyNoWay();
     this.quackBehavior = new MuteQuack();
   }
+
   display() {
     console.log('DecoyDuck show');
   }

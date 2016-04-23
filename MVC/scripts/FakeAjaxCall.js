@@ -1,4 +1,4 @@
-import $ from './FakeJquery';
+import $ from './jquery';
 
 $.ajax =  function(config) {
   return new Promise((resolve, reject) => {

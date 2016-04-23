@@ -7,7 +7,7 @@ function initializeLibrary(instance) {
 }
 
 class PublicLibraryVirtualProxy {
-  constructor(catalog) {
+  constructor(catalog = []) {
     this.library = null;
     this.catalog = catalog;
   }

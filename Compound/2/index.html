@@ -7,10 +7,10 @@
 <div id="source">
     <h2>Source</h2>
       <pre>
-import CountingDuckFactory from './CountingDuckFactory';
-import Goose from './Goose';
-import GooseAdapter from './GooseAdapter';
-import QuackCounter from './QuackCounter';
+import CountingDuckFactory from '../../common/CountingDuckFactory';
+import Goose from '../../common/Goose';
+import GooseAdapter from '../../common/GooseAdapter';
+import QuackCounter from '../../common/QuackCounter';
 
 let oDuckFactory = new CountingDuckFactory();
 let oMallardDuck = oDuckFactory.createMallardDuck();
@@ -29,7 +29,6 @@ oRubberDuck.quack();
 oGooseAdapter.quack();
 
 console.log(QuackCounter.getQuacks());
-
       </pre>
 </div>
 <div id="console">

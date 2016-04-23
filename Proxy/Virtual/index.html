@@ -7,7 +7,9 @@
 <div id="source">
     <h2>Source</h2>
       <pre>
-var oVirtualProxyLibrary = new PublicLibraryVirtualProxy([]);
+import PublicLibraryVirtualProxy from './PublicLibraryVirtualProxy';
+
+let oVirtualProxyLibrary = new PublicLibraryVirtualProxy();
 oVirtualProxyLibrary.findBooks('test');
       </pre>
 </div>

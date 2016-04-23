@@ -2,7 +2,7 @@ import Mattress from './Mattress';
 import PancakeHouseMenu from './PancakeHouseMenu';
 import DinnerMenu from './DinnerMenu';
 
-var oMattress = new Mattress({
+let oMattress = new Mattress({
   pancakeHouseMenu: new PancakeHouseMenu(),
   dinnerMenu: new DinnerMenu()
 });
