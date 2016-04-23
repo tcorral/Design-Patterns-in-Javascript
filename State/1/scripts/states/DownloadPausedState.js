@@ -1,23 +1,29 @@
 import State from './State';
 
-var DownloadPausedState = function(oDownload)
-{
-	State.apply(this);
-	this.oDownload = oDownload;
-};
-DownloadPausedState.prototype = new State();
-DownloadPausedState.prototype.download = function(){
-	this.oDownload.setState(this.oDownload.getDownloadingState());
-	console.log("Continue Download!");
-};
-DownloadPausedState.prototype.pause = function(){
-	throw new Error("You can't pause a paused download!");
-};
-DownloadPausedState.prototype.fail = function(){
-	this.oDownload.setState(this.oDownload.getDownloadedFailedState());
-	console.log("Download has failed!");
-};
-DownloadPausedState.prototype.finish = function(){
-	this.oDownload.setState(this.oDownload.getDownloadedState());
-	console.log("Download has finished!");
-};
+class DownloadPausedState extends State {
+  constructor(download) {
+    super();
+    this._download = download;
+  }
+
+  download() {
+    this._download.setState(this._download.getDownloadingState());
+    console.log("Continue Download!");
+  }
+
+  pause() {
+    throw new Error("You can't pause a paused download!");
+  }
+
+  fail() {
+    this._download.setState(this._download.getDownloadedFailedState());
+    console.log("Download has failed!");
+  }
+
+  finish() {
+    this._download.setState(this._download.getDownloadedState());
+    console.log("Download has finished!");
+  }
+}
+
+export default DownloadPausedState;

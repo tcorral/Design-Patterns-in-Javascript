@@ -1,41 +1,62 @@
-var GumballMachine = function() {
-  this.oState = new NoQuarterState(this);
-  this.nGumballs = 10;
-};
-GumballMachine.prototype.insertQuarter = function() {
-  this.oState.insertQuarter();
-};
-GumballMachine.prototype.ejectQuarter = function() {
-  this.oState.ejectQuarter();
-};
-GumballMachine.prototype.turnCrank = function() {
-  this.oState.turnCrank();
-};
-GumballMachine.prototype.dispense = function() {
-  this.oState.dispense();
-};
-GumballMachine.prototype.getCount = function() {
-  return this.nGumballs;
-};
-GumballMachine.prototype.releaseBall = function() {
-  console.log("Get a gumball!");
-  this.nGumballs = this.nGumballs - 1;
-};
-GumballMachine.prototype.setState = function(oState) {
-  this.oState = oState;
-};
-GumballMachine.prototype.getNoQuarterState = function() {
-  return new NoQuarterState(this);
-};
-GumballMachine.prototype.getHasQuarterState = function() {
-  return new HasQuarterState(this);
-};
-GumballMachine.prototype.getSoldOutState = function() {
-  return new SoldOutState(this);
-};
-GumballMachine.prototype.getSoldState = function() {
-  return new SoldState(this);
-};
-GumballMachine.prototype.getWinnerState = function() {
-  return new WinnerState(this);
-};
+import NoQuarterState from './states/NoQuarterState';
+import HasQuarterState from './states/HasQuarterState';
+import SoldOutState from './states/SoldOutState';
+import SoldState from './states/SoldState';
+import WinnerState from './states/WinnerState';
+
+class GumballMachine {
+  constructor() {
+    this.state = new NoQuarterState(this);
+    this.gumballs = 10;
+  }
+
+  insertQuarter() {
+    this.state.insertQuarter();
+  }
+
+  ejectQuarter() {
+    this.state.ejectQuarter();
+  }
+
+  turnCrank() {
+    this.state.turnCrank();
+  }
+
+  dispense() {
+    this.state.dispense();
+  }
+
+  getCount() {
+    return this.gumballs;
+  }
+
+  releaseBall() {
+    this.state.releaseBall();
+  }
+
+  setState(state) {
+    this.state = state;
+  }
+
+  getNoQuarterState() {
+    return new NoQuarterState(this);
+  }
+
+  getHasQuarterState() {
+    return new HasQuarterState(this);
+  }
+
+  getSoldOutState() {
+    return new SoldOutState(this);
+  }
+
+  getSoldState() {
+    return new SoldState(this);
+  }
+
+  getWinnerState() {
+    return new WinnerState(this);
+  }
+}
+
+export default GumballMachine;

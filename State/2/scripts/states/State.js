@@ -1,15 +1,27 @@
-var State = function(oGumballMachine){
-	this.oGumballMachine = oGumballMachine;
-};
-State.prototype.insertQuarter = function(){
-	throw new Error("This method must be overwritten!");
-};
-State.prototype.ejectQuarter = function(){
-	throw new Error("This method must be overwritten!");
-};
-State.prototype.turnCrank = function(){
-	throw new Error("This method must be overwritten!");
-};
-State.prototype.dispense = function(){
-	throw new Error("This method must be overwritten!");
-};
+class State {
+  constructor(gumballMachine) {
+    this.gumballMachine = gumballMachine;
+  }
+
+  insertQuarter() {
+    throw new Error("This method must be overwritten!");
+  }
+
+  releaseBall() {
+    throw new Error("This method must be overwritten!");
+  }
+
+  ejectQuarter() {
+    throw new Error("This method must be overwritten!");
+  }
+
+  turnCrank() {
+    throw new Error("This method must be overwritten!");
+  }
+
+  dispense() {
+    throw new Error("This method must be overwritten!");
+  }
+}
+
+export default State;

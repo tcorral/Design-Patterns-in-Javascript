@@ -1,9 +1,9 @@
 import Command from '../../common/Command';
 
-class Command2 extends Command {
+class CommandWithUndo extends Command {
   undo() {
     throw new Error('This method must be overwritten!');
   }
 }
 
-export default Command2;
+export default CommandWithUndo;

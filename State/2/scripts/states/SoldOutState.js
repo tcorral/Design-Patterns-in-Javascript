@@ -1,16 +1,22 @@
-var SoldOutState = function(oGumballMachine){
-	this.oGumballMachine = oGumballMachine;
-};
-SoldOutState.prototype.insertQuarter = function(){
-	console.log("You inserted a quarter!");
-	this.oGumballMachine.setState(this.oGumballMachine.getHasQuarterState());
-};
-SoldOutState.prototype.ejectQuarter = function(){
-	console.log("You haven't inserted a quarter!");
-};
-SoldOutState.prototype.turnCrank = function(){
-	console.log("You turned, but there is no quarter");
-};
-SoldOutState.prototype.dispense = function(){
-	console.log("You must to pay first!");
-};
+import State from './State';
+
+class SoldOutState extends State {
+  insertQuarter() {
+    console.log("You inserted a quarter!");
+    this.gumballMachine.setState(this.gumballMachine.getHasQuarterState());
+  }
+
+  ejectQuarter() {
+    console.log("You haven't inserted a quarter!");
+  }
+
+  turnCrank() {
+    console.log("You turned, but there is no quarter");
+  }
+
+  dispense() {
+    console.log("You must to pay first!");
+  }
+}
+
+export default SoldOutState;
