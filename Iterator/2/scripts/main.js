@@ -1,14 +1,14 @@
 import Mattress from './Mattress';
 import PancakeHouseMenu from './PancakeHouseMenu';
-import DinnerMenu from './DinnerMenu';
+import LunchMenu from './LunchMenu';
 
 let oMattress = new Mattress({
   pancakeHouseMenu: new PancakeHouseMenu(),
-  dinnerMenu: new DinnerMenu()
+  lunchMenu: new LunchMenu()
 });
 console.log("---------------------------------------------");
 oMattress.printMenu();
 console.log("---------------------------------------------");
 oMattress.printBreakfastMenu();
 console.log("---------------------------------------------");
-oMattress.printDinnerMenu();
+oMattress.printLunchMenu();

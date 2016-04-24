@@ -1,9 +1,9 @@
 import Mattress from './Mattress';
 import PancakeHouseMenu from './PancakeHouseMenu';
-import DinnerMenu from './DinnerMenu';
+import LunchMenu from './LunchMenu';
 import CafeMenu from './CafeMenu';
 
-var oMattress = new Mattress([new PancakeHouseMenu(), new DinnerMenu(), new CafeMenu()]);
+var oMattress = new Mattress([new PancakeHouseMenu(), new LunchMenu(), new CafeMenu()]);
 console.log("---------------------------------------------");
 oMattress.printMenu();
 console.log("---------------------------------------------");

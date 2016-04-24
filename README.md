@@ -40,7 +40,7 @@ This repository contains a folder by each design pattern.
 Inside these folders you can found, in some of them, other folders with numbers . This folders are the different steps to follow to arrive to the final resolution of the problem.
 You will understand it better if you have one copy of the book I recomend you before.
 
-## To transpile the code to ES5 you should use [Babel.js](https://github.com/babel/babel)
+## To transpile the code to ES5 you should execute ```gulp```
  
 ## Do you want to collaborate?
 

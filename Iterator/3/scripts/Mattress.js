@@ -9,25 +9,25 @@ function printMenu(iterator) {
 class Mattress {
   constructor(menus) {
     this.pancakeHouseMenu = menus.pancakeHouseMenu;
-    this.dinnerMenu = menus.dinnerMenu;
+    this.lunchMenu = menus.lunchMenu;
   }
   printMenu() {
     this.printBreakfastMenu();
-    this.printDinnerMenu();
+    this.printLunchMenu();
   }
   printBreakfastMenu() {
     var iteratorPancakeHouseMenu = this.pancakeHouseMenu.createIterator();
     console.log("Breakfast");
     printMenu(iteratorPancakeHouseMenu);
   }
-  printDinnerMenu() {
-    var iteratorDinnerMenu = this.dinnerMenu.createIterator();
-    console.log("Dinner");
-    printMenu(iteratorDinnerMenu);
+  printLunchMenu() {
+    var iteratorLunchMenu = this.lunchMenu.createIterator();
+    console.log("Lunch");
+    printMenu(iteratorLunchMenu);
   }
   isItemVegetarian(name) {
     var iteratorPancakeHouseMenu = this.pancakeHouseMenu.createIterator();
-    var iteratorDinnerMenu = this.dinnerMenu.createIterator();
+    var iteratorLunchMenu = this.lunchMenu.createIterator();
     let menuItem = iteratorPancakeHouseMenu.next();
 
     while(menuItem.value) {
@@ -37,13 +37,13 @@ class Mattress {
       }
     }
 
-    menuItem = iteratorDinnerMenu.next();
+    menuItem = iteratorLunchMenu.next();
 
     while(menuItem.value) {
       if(menuItem.value.name === name) {
         return menuItem.value.isVegetarian();
       }
-      menuItem = iteratorDinnerMenu.next();
+      menuItem = iteratorLunchMenu.next();
     }
 
     throw new Error("Sorry, but we don't have this in our menu!");

@@ -3,7 +3,7 @@ import MenuItem from '../../common/MenuItem';
 import Iterator from '../../common/Iterator';
 
 const MAX_ITEMS = 6;
-class DinnerMenu extends Menu {
+class LunchMenu extends Menu {
   constructor() {
     super();
     this.addItem("Vegetarian BLT", "(Fakin') Bacon with lettuce and tomato on whole wheat", true, 2.99);
@@ -21,4 +21,4 @@ class DinnerMenu extends Menu {
   }
 }
 
-export default DinnerMenu;
+export default LunchMenu;

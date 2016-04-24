@@ -1,5 +1,5 @@
 import PancakeHouseMenu from './PancakeHouseMenu';
-import DinnerMenu from './DinnerMenu';
+import LunchMenu from './LunchMenu';
 
 function processArray(array, callback) {
   for (let item of array) {
@@ -26,7 +26,7 @@ function printEachVegetarianMenu(array, name) {
 class Mattress {
   constructor() {
     this.breakfastItems = new PancakeHouseMenu().getMenuItems();
-    this.lunchItems = new DinnerMenu().getMenuItems();
+    this.lunchItems = new LunchMenu().getMenuItems();
   }
 
   printBreakfastMenu() {
