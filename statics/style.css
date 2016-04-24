@@ -42,14 +42,14 @@ a {
 #st-control-18, #st-control-18 + a,
 #st-control-19, #st-control-19 + a,
 #st-control-20, #st-control-20 + a{
-	width: 10%;
+	width: 12.5%;
 }
 
 #st-control-21, #st-control-21 + a,
 #st-control-22, #st-control-22 + a,
 #st-control-23, #st-control-23 + a,
 #st-control-24, #st-control-24 + a{
-	width: 25%;
+	width: 14.30%;
 }
 
 .st-container > input {
@@ -89,114 +89,111 @@ a {
 }
 
 #st-control-2, #st-control-2 + a {
-	left: 10%;
+	left: 12.5%;
 	bottom: 70px;
 }
 
 #st-control-3, #st-control-3 + a {
-	left: 20%;
+	left: 25%;
 	bottom: 70px;
 }
 
 #st-control-4, #st-control-4 + a {
-	left: 30%;
+	left: 37.5%;
 	bottom: 70px;
 }
 
 #st-control-5, #st-control-5 + a {
-	left: 40%;
+	left: 50%;
 	bottom: 70px;
 }
 
 #st-control-6, #st-control-6 + a {
-	left: 50%;
+	left: 62.5%;
 	bottom: 70px;
 }
 
 #st-control-7, #st-control-7 + a {
-	left: 60%;
+	left: 75%;
 	bottom: 70px;
 }
 
 #st-control-8, #st-control-8 + a {
-	left: 70%;
+	left: 87.5%;
 	bottom: 70px;
 }
 
 #st-control-9, #st-control-9 + a {
-	left: 80%;
-	bottom: 70px;
+	left: 0;
+	bottom: 35px;
 }
 
 #st-control-10, #st-control-10 + a {
-	left: 90%;
-	bottom: 70px;
+	left: 12.5%;
+	bottom: 35px;
 }
 
 #st-control-11, #st-control-11 + a {
-	left: 0;
+	left: 25%;
 	bottom: 35px;
 }
 
 #st-control-12, #st-control-12 + a {
-	left: 10%;
+	left: 37.5%;
 	bottom: 35px;
 }
 
 #st-control-13, #st-control-13 + a {
-	left: 20%;
+	left: 50%;
 	bottom: 35px;
 }
 
 #st-control-14, #st-control-14 + a {
-	left: 30%;
+	left: 62.5%;
 	bottom: 35px;
 }
 
 #st-control-15, #st-control-15 + a {
-	left: 40%;
+	left: 75%;
 	bottom: 35px;
 }
 
 #st-control-16, #st-control-16 + a {
-	left: 50%;
+	left: 75%;
 	bottom: 35px;
 }
 
 #st-control-17, #st-control-17 + a {
-	left: 60%;
+	left: 87.5%;
 	bottom: 35px;
 }
 
 #st-control-18, #st-control-18 + a {
-	left: 70%;
-	bottom: 35px;
-}
-
-#st-control-19, #st-control-19 + a {
-	left: 80%;
-	bottom: 35px;
-}
-
-#st-control-20, #st-control-20 + a {
-	left: 90%;
-	bottom: 35px;
-}
-
-#st-control-21, #st-control-21 + a {
 	left: 0;
 }
 
+#st-control-19, #st-control-19 + a {
+	left: 14.29%;
+}
+
+#st-control-20, #st-control-20 + a {
+	left: 28.58%;
+}
+
+#st-control-21, #st-control-21 + a {
+	left: 42.87%;
+}
+
 #st-control-22, #st-control-22 + a {
-	left: 25%;
+	left: 57.17%;
 }
 
 #st-control-23, #st-control-23 + a {
-	left: 50%;
+	left: 71.47%;
 }
 
 #st-control-24, #st-control-24 + a {
-	left: 75%;
+	left: 85.76%;
 }
 
 .st-container > input:checked + a,
