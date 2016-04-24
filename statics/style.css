@@ -566,6 +566,9 @@ a {
 	-webkit-backface-visibility: hidden;
 }
 
+#st-panel-0.st-panel p {
+	text-align: center;
+}
 .st-panel p a:hover {
 	color: #e23a6e;
 }
