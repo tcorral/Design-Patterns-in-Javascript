@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>MVC Pattern</title>
+    <link type="text/css" rel="stylesheet" href="../statics/css/style.css"/>
+    <style type="text/css">
+        .todo {
+            background-color: #fcc;
+        }
+
+        .done {
+            background-color: #cfc;
+        }
+
+        #results li {
+            color: #000;
+            width: 900px;
+        }
+    </style>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+      <pre>
+import ListView from './ListView';
+import TodoModel from './TodoModel';
+import ListController from './ListController';
+
+let oListView = new ListView(document.getElementById("results"));
+let oTodoModel = new TodoModel();
+let oListController = new ListController(oListView, oTodoModel);
+
+oListController.init();
+      </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul id="results"></ul>
+    <h1>M.V.C.</h1>
+</div>
+<script type="text/javascript" src="../statics/js/utils.js"></script>
+<script type="text/javascript" src="../statics/js/jquery.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>

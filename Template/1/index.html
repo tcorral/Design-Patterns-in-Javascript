@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
+    <title>Template Pattern</title>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+      <pre>
+import Coffee from './Coffee';
+import Tea from './Tea';
+
+let oCoffee = new Coffee();
+oCoffee.prepareRecipe();
+console.log("*********************************************************");
+let oTea = new Tea();
+oTea.prepareRecipe();
+      </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>TEMPLATE</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>

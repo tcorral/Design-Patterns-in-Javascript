@@ -1,0 +1,5 @@
+http://javascript.crockford.com/memory/leak.html
+http://geekswithblogs.net/FrostRed/archive/2008/11/29/127440.aspx
+http://www.ibm.com/developerworks/web/library/wa-memleak/
+http://msdn.microsoft.com/en-us/library/Bb250448
+http://buildnewgames.com/garbage-collector-friendly-code/

@@ -1,54 +1,37 @@
 <html>
-  <head>
-    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
-	<title>State Pattern</title>
-	<script type="text/javascript" src="../../js/jquery.js"></script>
-	<script type="text/javascript" src="Download.js"></script>
-	<script type="text/javascript" src="states/State.js"></script>
-	<script type="text/javascript" src="states/DownloadFailedState.js"></script>
-	<script type="text/javascript" src="states/DownloadPausedState.js"></script>
-	<script type="text/javascript" src="states/DownloadedState.js"></script>
-	<script type="text/javascript" src="states/DownloadingState.js"></script>
-	<script type="text/javascript" src="states/ReadyState.js"></script>
-  </head>
-  <body>
-  	<input type="button" value="download" id="download_button"/>
-	<input type="button" value="pause" id="pause_button"/>
-	<input type="button" value="resume" id="resume_button"/>
-    <div id="source">
-      <h2>Source</h2>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
+    <title>State Pattern</title>
+    <script type="text/javascript" src="../../statics/js/jquery.js"></script>
+</head>
+<body>
+<input type="button" value="download" id="download_button"/>
+<input type="button" value="pause" id="pause_button"/>
+<input type="button" value="resume" id="resume_button"/>
+<div id="source">
+    <h2>Source</h2>
       <pre>
+import Download from './Download';
+
 var oDownload = new Download();
 
-$("#download_button").click(function(){
-	oDownload.download();
+$("#download_button").click(function() {
+  oDownload.download();
 });
-$("#pause_button").click(function(){
-	oDownload.pause();
+$("#pause_button").click(function() {
+  oDownload.pause();
 });
-$("#resume_button").click(function(){
-	oDownload.download();
+$("#resume_button").click(function() {
+  oDownload.download();
 });
       </pre>
-    </div>
-    <div id="console">
-    	<h2>Console</h2>
-	    <ul></ul>
-	    <h1>STATE</h1>
-    </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
-    <script type="text/javascript">
-		var oDownload = new Download();
-
-		$("#download_button").click(function(){
-			oDownload.download();
-		});
-		$("#pause_button").click(function(){
-			oDownload.pause();
-		});
-		$("#resume_button").click(function(){
-			oDownload.download();
-		});
-    </script>
-  </body>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>STATE</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
 </html>

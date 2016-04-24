@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
+    <title>Try-Finally Pattern</title>
+    <style type="text/css">
+        #test {
+            margin-left: 40px;
+            margin-bottom: 30px;
+        }
+
+        #test span {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #test div {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+            <pre>
+import MallardDuck from '../../common/MallardDuck';
+import RedheadDuck from '../../common/RedheadDuck';
+import RubberDuck from '../../common/RubberDuck';
+
+var mallard = new MallardDuck();
+var redhead = new RedheadDuck();
+var rubber = new RubberDuck();
+
+mallard.quack();
+mallard.swim();
+mallard.fly();
+mallard.display();
+
+redhead.quack();
+redhead.swim();
+redhead.fly();
+redhead.display();
+
+rubber.quack();
+rubber.swim();
+rubber.fly();
+rubber.display();
+            </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>Try-Finally</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>

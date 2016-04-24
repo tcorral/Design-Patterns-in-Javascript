@@ -1,0 +1,106 @@
+body
+{
+    background:url(../../img/page/background.jpg) repeat;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+    color:#999;
+    margin: 0px;
+}
+
+.link a
+{
+    margin-right: 20px;
+}
+
+#header
+{
+    margin:0px auto;
+    padding:20px 0px 0px;
+}
+
+#projects
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 900px;
+    height: 50px;
+}
+#projects div.title
+{
+    font-size: 14px;
+    color: #333;
+}
+.other_projects
+{
+    list-style-type: none;
+}
+.other_projects li
+{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 15%;
+}
+.other_projects li a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: #666;
+}
+.other_projects li a:hover
+{
+    font-weight: bold;
+    color: #000;
+}
+.contentCaption
+{
+    height: 160px;
+    margin-bottom: 20px;
+    background-color: #000;
+    width: 555px;
+    overflow: auto;
+    border: #ccc 1px solid;
+    padding: 10px;
+}
+
+#header h1
+{
+    position:absolute;
+    top: -10000px;
+    left: -10000px;
+}
+
+.accordion
+{
+    width:1200px;
+    margin:0px auto;
+    list-style:none;
+    padding:0px;
+}
+
+
+.accordion img, .accordion .caption
+{
+    position:absolute;
+    left:-9999px;
+}
+
+
+#navigation
+{
+    width:200px;
+    height:25px;
+    margin:60px auto 0px;
+}
+
+
+#navigation a
+{
+    background-color:#F1F1F1;
+    text-decoration:none;
+    color:#999;
+    padding:5px 10px;
+    margin:0px 4px;
+    border:#FFF solid 2px;
+}

@@ -1,28 +1,27 @@
 <html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
-        <title>Chain Pattern</title>
-        <script type="text/javascript" src="Chainable.js"></script>
-    </head>
-   <body>
-        <div id="source">
-            <h2>Source</h2>
+<head>
+    <link type="text/css" rel="stylesheet" href="../statics/css/style.css"/>
+    <title>Chain Pattern</title>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
             <pre>
-    var oChainable = new Chainable();
-    // This must return "21"
-    oChainable.add(3).add(4).multiply(3).toString();
+import Chainable from './Chainable';
+
+let chainable = new Chainable();
+
+console.log(chainable.add(3));
+console.log(chainable.add(4));
+console.log(chainable.multiply(3));
             </pre>
-        </div>
-        <div id="console">
-            <h2>Console</h2>
-            <ul></ul>
-            <h1>Chain</h1>
-        </div>
-        <script type="text/javascript" src="../js/utils.js"></script>
-        <script type="text/javascript">
-            var oChainable = new Chainable();
-            // This must return "21"
-            console.log(oChainable.add(3).add(4).multiply(3).toString());
-        </script>
-    </body>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>Chain</h1>
+</div>
+<script type="text/javascript" src="../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
 </html>

@@ -3,60 +3,18 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Javascript - Design Patterns -</title>
-		<link rel="stylesheet" type="text/css" href="css/page/grid-accordion.css" media="screen"/>
-		<link rel="stylesheet" type="text/css" href="css/page/grid-accordion-index.css" media="screen"/>
-		<link rel="stylesheet" type="text/css" href="css/page/style.css" media="screen"/>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/page/jquery.gridAccordion.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.accordion').gridAccordion({width:1200, height:600, columns:4, distance:8, closedPanelWidth:40, closedPanelHeight:40, alignType:'centerCenter', slideshow:true,
-					    panelProperties:{
-									0:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									1:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									2:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									3:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									4:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									5:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									6:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									7:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									8:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									9:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									10:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									11:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									12:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									13:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									14:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									15:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									16:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									17:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									18:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
-									19:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30}
-						}});
-			});
-		</script>
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-27648153-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
+		<link rel="stylesheet" type="text/css" href="statics/css/page/grid-accordion.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="statics/css/page/grid-accordion-index.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="statics/css/page/style.css" media="screen"/>
 	</head>
 	<body>
     	<div id="header">
     		<h1>Javascript - Design Patterns - </h1>
-    		<img src="img/page/title.png"/>
+    		<img src="statics/img/page/title.png"/>
     	</div>
        	<ul class="accordion">
             <li>
-                <img src="img/page/singleton.jpg"/>
+                <img src="statics/img/page/singleton.jpg"/>
                 <div class="caption">
                 	<h2>Singleton</h2>
                 	<div class="contentCaption">
@@ -71,7 +29,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/factory.jpg"/>
+                <img src="statics/img/page/factory.jpg"/>
                 <div class="caption">
                 	<h2>Factory</h2>
                 	<div class="contentCaption">
@@ -87,7 +45,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/command.jpg"/>
+                <img src="statics/img/page/command.jpg"/>
                 <div class="caption">
                 	<h2>Command</h2>
                 	<div class="contentCaption">
@@ -100,7 +58,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/observer.jpg"/>
+                <img src="statics/img/page/observer.jpg"/>
                 <div class="caption">
                 	<h2>Observer</h2>
                 	<div class="contentCaption">
@@ -112,7 +70,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/decorator.jpg"/>
+                <img src="statics/img/page/decorator.jpg"/>
                 <div class="caption">
                 	<h2>Decorator</h2>
                 	<div class="contentCaption">
@@ -124,7 +82,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/proxy.jpg"/>
+                <img src="statics/img/page/proxy.jpg"/>
                 <div class="caption">
                 	<h2>Proxy</h2>
                 	<div class="contentCaption">
@@ -132,12 +90,12 @@
                 	</div>
                 	<div class='link'>
                 		<a href="Proxy/1/index.html">Example</a>
-                		<a href="Proxy/Virtual/index.html">Example Virtual Proxy.</a>
+                		<a href="Proxy/2/index.html">Example Virtual Proxy.</a>
                 	</div>
                 </div>
             </li>
             <li>
-                <img src="img/page/facade.jpg"/>
+                <img src="statics/img/page/facade.jpg"/>
                 <div class="caption">
                 	<h2>Facade</h2>
                 	<div class="contentCaption">
@@ -149,7 +107,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/iterator.jpg"/>
+                <img src="statics/img/page/iterator.jpg"/>
                 <div class="caption">
                 	<h2>Iterator</h2>
                 	<div class="contentCaption">
@@ -164,7 +122,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/strategy.jpg"/>
+                <img src="statics/img/page/strategy.jpg"/>
                 <div class="caption">
                 	<h2>Strategy</h2>
                 	<div class="contentCaption">
@@ -180,7 +138,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/state.jpg"/>
+                <img src="statics/img/page/state.jpg"/>
                 <div class="caption">
                 	<h2>State</h2>
                 	<div class="contentCaption">
@@ -193,7 +151,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/adapter.jpg"/>
+                <img src="statics/img/page/adapter.jpg"/>
                 <div class="caption">
                 	<h2>Adapter</h2>
                 	<div class="contentCaption">
@@ -205,7 +163,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/composite.jpg"/>
+                <img src="statics/img/page/composite.jpg"/>
                 <div class="caption">
                 	<h2>Composite</h2>
                 	<div class="contentCaption">
@@ -219,20 +177,20 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/template.jpg"/>
+                <img src="statics/img/page/template.jpg"/>
                 <div class="caption">
                 	<h2>Template</h2>
                 	<div class="contentCaption">
 						The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
                 	</div>
                 	<div class='link'>
-                		<a href="Template/withoutHook/index.html">Example without hook</a>
-                		<a href="Template/withHook/index.html">Example with hook</a>
+                		<a href="Template/1/index.html">Example without hook</a>
+                		<a href="Template/2/index.html">Example with hook</a>
                 	</div>
                 </div>
             </li>
             <li>
-                <img src="img/page/namespace.jpg"/>
+                <img src="statics/img/page/namespace.jpg"/>
                 <div class="caption">
                 	<h2>Namespace</h2>
                 	<div class="contentCaption">
@@ -244,7 +202,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/lazy.jpg"/>
+                <img src="statics/img/page/lazy.jpg"/>
                 <div class="caption">
                 	<h2>Lazy</h2>
                 	<div class="contentCaption">
@@ -256,7 +214,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/module.jpg"/>
+                <img src="statics/img/page/module.jpg"/>
                 <div class="caption">
                 	<h2>Module</h2>
                 	<div class="contentCaption">
@@ -272,7 +230,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/nullify.jpg"/>
+                <img src="statics/img/page/nullify.jpg"/>
                 <div class="caption">
                 	<h2>Nullify</h2>
                 	<div class="contentCaption">
@@ -285,7 +243,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/tryfinally.jpg"/>
+                <img src="statics/img/page/tryfinally.jpg"/>
                 <div class="caption">
                 	<h2>Try-Finally</h2>
                 	<div class="contentCaption">
@@ -298,7 +256,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/chaining.jpg"/>
+                <img src="statics/img/page/chaining.jpg"/>
                 <div class="caption">
                 	<h2>Chaining</h2>
                 	<div class="contentCaption">
@@ -310,7 +268,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/page/mvc.jpg"/>
+                <img src="statics/img/page/mvc.jpg"/>
                 <div class="caption">
                 	<h2>M.V.C.</h2>
                 	<div class="contentCaption">
@@ -327,7 +285,7 @@
 						</div>
                 	</div>
                 	<div class='link'>
-                		<a href="MVC/1/index.html">Example</a>
+                		<a href="MVC/index.html">Example</a>
                 	</div>
                 </div>
             </li>
@@ -356,5 +314,48 @@
             </ul>
         </div>
       	<a href="https://github.com/tcorral/Design-Patterns-in-Javascript/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/30f550e0d38ceb6ef5b81500c64d970b7fb0f028/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub"></a>
+
+        <script type="text/javascript" src="statics/js/jquery_page.js"></script>
+        <script type="text/javascript" src="statics/js/page/jquery.gridAccordion.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.accordion').gridAccordion({width:1200, height:600, columns:4, distance:8, closedPanelWidth:40, closedPanelHeight:40, alignType:'centerCenter', slideshow:true,
+                    panelProperties:{
+                        0:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        1:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        2:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        3:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        4:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        5:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        6:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        7:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        8:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        9:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        10:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        11:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        12:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        13:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        14:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        15:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        16:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        17:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        18:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30},
+                        19:{captionWidth:600, captionHeight:300, captionTop:30, captionLeft:30}
+                    }});
+            });
+        </script>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-27648153-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
 	</body>
 </html>

@@ -1,27 +1,24 @@
 <html>
-  <head>
-    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
-	<title>Proxy Pattern</title>
-	<script type="text/javascript" src="PublicLibrary.js"></script>
-	<script type="text/javascript" src="PublicLibraryProxy.js"></script>
-  </head>
-  <body>
-    <div id="source">
-      <h2>Source</h2>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
+    <title>Proxy Pattern</title>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
       <pre>
+import PublicLibraryProxy from './PublicLibraryProxy';
+
 var oProxyLibrary = new PublicLibraryProxy([]);
 oProxyLibrary.findBooks('test');
       </pre>
-    </div>
-    <div id="console">
-    	<h2>Console</h2>
-	    <ul></ul>
-	    <h1>PROXY</h1>
-    </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
-    <script type="text/javascript">
-		var oProxyLibrary = new PublicLibraryProxy([]);
-		oProxyLibrary.findBooks('test');
-    </script>
-  </body>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>PROXY</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
 </html>

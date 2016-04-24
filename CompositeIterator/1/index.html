@@ -1,38 +1,36 @@
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
     <title>CompositeIterator Pattern</title>
-	<script type="text/javascript" src="MenuComponent.js"></script>
-	<script type="text/javascript" src="Menu.js"></script>
-	<script type="text/javascript" src="MenuItem.js"></script>
-	<script type="text/javascript" src="Iterator.js"></script>
-	<script type="text/javascript" src="CompositeIterator.js"></script>
-	<script type="text/javascript" src="ConvertToIterator.js"></script>
-	<script type="text/javascript" src="NullIterator.js"></script>
-	<script type="text/javascript" src="DinnerMenu.js"></script>
-	<script type="text/javascript" src="PancakeHouseMenu.js"></script>
-	<script type="text/javascript" src="CafeMenu.js"></script>
-	<script type="text/javascript" src="Mattress.js"></script>
   </head>
   <body>
     <div id="source">
       <h2>Source</h2>
       <pre>
+import Menu from '../../common/Menu';
+import MenuItem from '../../common/MenuItem';
+import Mattress from '../../common/Mattress';
+
 var oPanCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
-var oDinnerMenu = new Menu("Dinner Menu", "Lunch");
-var oCoffeeMenu = new Menu("Cafe Menu", "Dinner");
+var oLunchMenu = new Menu("Lunch Menu", "Lunch");
+var oCoffeeMenu = new Menu("Cafe Menu", "Lunch");
 var oAllMenus = new Menu("ALL MENUS", "All menus combined");
 
 oAllMenus.add(oPanCakeHouseMenu);
-oAllMenus.add(oDinnerMenu);
+oAllMenus.add(oLunchMenu);
 
-oDinnerMenu.add(new MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89));
-oDinnerMenu.add(oCoffeeMenu);
+oLunchMenu.add(new MenuItem("Pasta",
+  "Spaghetti with Marinara Sauce, and a slice of sourdough bread",
+  true,
+  3.89));
+oLunchMenu.add(oCoffeeMenu);
 
 oCoffeeMenu.add(new MenuItem("Express", "Coffee from machine", false, 0.99));
 
 var oMattress = new Mattress(oAllMenus);
+console.log("---------------------------------------------");
 oMattress.printMenu();
+console.log("---------------------------------------------");
       </pre>
     </div>
     <div id="console">
@@ -40,28 +38,7 @@ oMattress.printMenu();
 	    <ul></ul>
 	    <h1>COMPOSITE ITERATOR</h1>
     </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
-    <script type="text/javascript">
-		var oPanCakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
-		var oDinnerMenu = new Menu("Dinner Menu", "Lunch");
-		var oCoffeeMenu = new Menu("Cafe Menu", "Dinner");
-		var oAllMenus = new Menu("ALL MENUS", "All menus combined");
-
-		oAllMenus.add(oPanCakeHouseMenu);
-		oAllMenus.add(oDinnerMenu);
-
-		oDinnerMenu.add(new MenuItem("Pasta",
-										"Spaghetti with Marinara Sauce, and a slice of sourdough bread",
-										true,
-										3.89));
-		oDinnerMenu.add(oCoffeeMenu);
-
-		oCoffeeMenu.add(new MenuItem("Express", "Coffee from machine", false, 0.99));
-
-		var oMattress = new Mattress(oAllMenus);
-		console.log("---------------------------------------------");
-		oMattress.printMenu();
-		console.log("---------------------------------------------");
-    </script>
+    <script type="text/javascript" src="../../statics/js/utils.js"></script>
+    <script type="text/javascript" src="dist/scripts/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../../statics/css/style.css"/>
+    <title>Nullify Pattern</title>
+    <style type="text/css">
+        #test {
+            margin-left: 40px;
+        }
+
+        #test span {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+            <pre>
+var nElement = 0;
+var nTimes = 100000;
+function createElement() {
+    var div = document.createElement("div");
+    div.onclick = function () {};
+}
+for (; nElement < nTimes; nElement++) {
+    createElement();
+}
+            </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <div id="test"></div>
+    <ul></ul>
+    <h1>Nullify</h1>
+</div>
+<script type="text/javascript" src="../../../statics/js/utils.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
