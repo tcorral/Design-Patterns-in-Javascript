@@ -1,0 +1,57 @@
+@import url('normalize.css');
+@font-face {
+	font-family:'RaphaelIcons';
+    src: url('raphaelicons-webfont.eot');
+    src: local('☺'), 
+		url('fonts/raphaelicons-webfont.woff') format('woff'), 
+		url('fonts/raphaelicons-webfont.ttf') format('truetype'), 
+		url('fonts/raphaelicons-webfont.svgwebfontKOf9F4sx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* General Demo Style */
+body{
+	font-family: Georgia, serif;
+	background: #ddd;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+a{
+	color: #555;
+	text-decoration: none;
+}
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+/* Header Style */
+.codrops-top{
+	line-height: 24px;
+	font-size: 9px;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	font-family: Cambria, Georgia, serif;
+}
+.codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #888;
+	display: inline-block;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+}
+.codrops-top span.right{
+	float: right;
+}
+.codrops-top span.right a{
+	float: left;
+	display: block;
+}
+@media screen and (max-width: 520px) {
+	.codrops-top { display: none; }
+}
