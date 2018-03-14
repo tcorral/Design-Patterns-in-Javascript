@@ -11,10 +11,6 @@ class PizzaIngredientFactory {
     throw new Error("This method must be overwritten!");
   }
 
-  createCheese() {
-    throw new Error("This method must be overwritten!");
-  }
-
   createVeggies() {
     throw new Error("This method must be overwritten!");
   }
