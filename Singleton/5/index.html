@@ -7,12 +7,11 @@
 <div id="source">
     <h2>Source</h2>
       <pre>
-import Singleton from './Singleton';
+import DatabaseConnection from './DatabaseConnection';
 
-var oSingle1 = Singleton;
-var oSingle2 = Singleton;
-console.log(Singleton.toString());
-console.log("Are oSingle1 and oSingle2 the same instance? " + (oSingle1 === oSingle2));
+var oSingle1 = DatabaseConnection.instance;
+var oSingle2 = DatabaseConnection.instance;
+console.log("Are oSingle1 and oSingle2 the same instance? " + (oSingle1 === oSingle2));        
       </pre>
 </div>
 <div id="console">

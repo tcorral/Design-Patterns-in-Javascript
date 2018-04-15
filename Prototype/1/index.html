@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
+    <title>Prototype Pattern</title>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+      <pre>
+import HumanBeing from './HumanBeing';
+
+var me = new HumanBeing({ skinColor: 'pale', hairColor: 'brown', height:'173cm', weight: '100kg', gender: 'male'});
+
+var clone = me.clone();
+
+console.log(`Are original and clone the same instance? ${me === clone}`);
+
+for(let key in me) {
+    console.log(`Are both ${key} property values in original and clone the same value? ${me[key] === clone[key]}`);
+}
+      </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>Prototype</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>

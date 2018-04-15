@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../../statics/css/style.css"/>
+    <title>Builder Pattern</title>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+      <pre>
+import MealBuilder from './MealBuilder';
+
+var mealBuilder = new MealBuilder();
+
+var veganMeal = mealBuilder.prepareVeganMeal();
+veganMeal.showItems();
+console.log(`Vegan meal cost: $${veganMeal.getCost()}`);
+
+var nonVeganMeal = mealBuilder.prepareNonVeganMeal();
+nonVeganMeal.showItems();
+console.log(`Non vegan meal cost: $${nonVeganMeal.getCost()}`);
+
+var deluxeMeal = mealBuilder.prepareDeluxeMeal();
+deluxeMeal.showItems();
+console.log(`Deluxe meal cost: $${deluxeMeal.getCost()}`);        
+      </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>Builder</h1>
+</div>
+<script type="text/javascript" src="../../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>
