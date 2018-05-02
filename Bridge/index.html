@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../statics/css/style.css"/>
+    <title>Bridge Pattern</title>
+</head>
+<body>
+<div id="source">
+    <h2>Source</h2>
+      <pre>
+import GreyColor from './GreyColor';
+import FamilyCar from './FamilyCar';
+import MatteBlackColor from './MatteBlackColor';
+import Adventure4x4Car from './Adventure4X4Car';
+import RedColor from './RedColor';
+import UrbanCar from './UrbanCar';
+
+const familyCar = new FamilyCar(new GreyColor());
+const adventureCar = new Adventure4x4Car(new MatteBlackColor());
+const urbanCar = new UrbanCar(new RedColor());
+
+familyCar.applyColor();
+adventureCar.applyColor();
+urbanCar.applyColor();
+      </pre>
+</div>
+<div id="console">
+    <h2>Console</h2>
+    <ul></ul>
+    <h1>BRIDGE</h1>
+</div>
+
+
+<script type="text/javascript" src="../statics/js/utils.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>
