@@ -2,6 +2,7 @@
 This will be a repository of how to use the Design Patterns from *Gang of Four* in your applications with Javascript.
 
 ## Update:
+- Added Flyweight implementation.
 - Added Bridge implementation.
 - Added Prototype and Builder implementations.
 - All the Design Patterns have been refactored to ES6.
