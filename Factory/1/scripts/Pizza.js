@@ -18,7 +18,7 @@ class Pizza {
   }
 
   bake() {
-    console.log("Bake for 25 minutes at 350");
+    console.log("Bake for 90 seconds at 480");
   }
 
   cut() {
