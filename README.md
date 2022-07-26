@@ -13,38 +13,23 @@ This will be a repository of how to use the Design Patterns from *Gang of Four* 
 
 ## Design Patterns that you can find in this repository:
 
-* Adapter
-* Builder
-* Bridge
-* Chaining
-* Command
-* Composite
-* Composite Iterator
-* Compound (Use some design patterns together to solve a problem)
-* Decorator
-* Facade
-* Factory
-* Iterator
-* Lazy
-* Module
-* Module Revealed
-* Multi-Inheritance ES6
-* MVC
-* Namespace
-* Nullify
-* Observer
-* Prototype
-* Proxy
-* Singleton
-* State
-* Strategy
-* Template
-* Try-Finally
+| Design Pattern| | |
+| ------------- | ------------- | -------- |
+| Adapter          | Decorator        | MVC  |
+| Builder           | Facade       | Namespace  |
+| Bridge          | Factory      | Nullify  |
+| Chaining           | Iterator         | Observer |
+| Command      | Lazy       | Prototype  |
+| Composite          | Module         | Proxy  |
+| Composite Iterator        | Module Revealed        | Singleton  |
+| Compound   | Multi-Inheritance ES6         |   |
+
+
 
 This repository contains a folder by each design pattern.
 
-Inside these folders you can found, in some of them, other folders with numbers . This folders are the different steps to follow to arrive to the final resolution of the problem.
-You will understand it better if you have one copy of the book I recomend you before.
+Inside these folders you can found, in some of them, other folders with numbers. This folders are the different steps to follow to arrive to the final resolution of the problem.
+You will understand it better if you have one copy of the book I recommended you before.
 
 ## To transpile the code to ES5 you should execute ```gulp```
  
