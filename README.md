@@ -1,9 +1,3 @@
-<!--
- * @Author       : chenjie
- * @Date         : 2023-06-20 15:43:40
- * @FilePath     : /Design-Patterns-in-Javascript/README.md
- * @Description  : 
--->
 # Design Patterns in Javascript ES6
 This will be a repository of how to use the Design Patterns from *Gang of Four* in your applications with Javascript.
 
