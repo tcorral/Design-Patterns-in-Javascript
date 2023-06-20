@@ -1,3 +1,9 @@
+<!--
+ * @Author       : chenjie
+ * @Date         : 2023-06-20 15:43:40
+ * @FilePath     : /Design-Patterns-in-Javascript/README.md
+ * @Description  : 
+-->
 # Design Patterns in Javascript ES6
 This will be a repository of how to use the Design Patterns from *Gang of Four* in your applications with Javascript.
 
@@ -47,7 +53,18 @@ Inside these folders you can found, in some of them, other folders with numbers 
 You will understand it better if you have one copy of the book I recomend you before.
 
 ## To transpile the code to ES5 you should execute ```gulp```
- 
+
+## Setup
+Recommend env: `node 11.15.0`, other node version maybe cause some build errors
+
+```shell
+npm i
+
+gulp
+```
+
+Open the html file in each folder
+
 ## Do you want to collaborate?
 
 All constructive comments are welcome. I promise I will answer everyone.
