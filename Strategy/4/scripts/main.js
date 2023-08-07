@@ -3,10 +3,10 @@ import RedheadDuck from './RedheadDuck';
 import RubberDuck from './RubberDuck';
 import DecoyDuck from './DecoyDuck';
 
-var mallard = new MallardDuck();
-var redhead = new RedheadDuck();
-var rubber = new RubberDuck();
-var decoy = new DecoyDuck();
+let mallard = new MallardDuck();
+let redhead = new RedheadDuck();
+let rubber = new RubberDuck();
+let decoy = new DecoyDuck();
 
 mallard.quack();
 mallard.swim();
