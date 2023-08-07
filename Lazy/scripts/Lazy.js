@@ -30,8 +30,8 @@ class Lazy {
       </div>
     `;
     this.update = (text, date) => {
-      var textNode = this.container.querySelector('.text');
-      var timeNode = this.container.querySelector('.time');
+      let textNode = this.container.querySelector('.text');
+      let timeNode = this.container.querySelector('.time');
       textNode.innerHTML = text;
       timeNode.innerHTML = this.getFormattedTime(date);
     };
