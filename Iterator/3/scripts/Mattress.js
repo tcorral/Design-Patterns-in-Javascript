@@ -16,18 +16,18 @@ class Mattress {
     this.printLunchMenu();
   }
   printBreakfastMenu() {
-    var iteratorPancakeHouseMenu = this.pancakeHouseMenu.createIterator();
+    let iteratorPancakeHouseMenu = this.pancakeHouseMenu.createIterator();
     console.log("Breakfast");
     printMenu(iteratorPancakeHouseMenu);
   }
   printLunchMenu() {
-    var iteratorLunchMenu = this.lunchMenu.createIterator();
+    let iteratorLunchMenu = this.lunchMenu.createIterator();
     console.log("Lunch");
     printMenu(iteratorLunchMenu);
   }
   isItemVegetarian(name) {
-    var iteratorPancakeHouseMenu = this.pancakeHouseMenu.createIterator();
-    var iteratorLunchMenu = this.lunchMenu.createIterator();
+    let iteratorPancakeHouseMenu = this.pancakeHouseMenu.createIterator();
+    let iteratorLunchMenu = this.lunchMenu.createIterator();
     let menuItem = iteratorPancakeHouseMenu.next();
 
     while(menuItem.value) {
