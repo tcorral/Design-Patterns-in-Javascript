@@ -20,7 +20,7 @@ class ListController {
 
           this.view.innerHTML = html;
           $(this.view).on('click', '.todo', event => {
-            var element = event.target;
+            let element = event.target;
             this.model
               .completeItem(element.id)
               .then(
@@ -29,7 +29,7 @@ class ListController {
                 }
               );
           }).on('click', '.done', event => {
-            var element = event.target;
+            let element = event.target;
             this.model
               .undoItem(element.id)
               .then(() => {
@@ -44,7 +44,7 @@ class ListController {
   }
 
   handleError(message) {
-    var className = 'error';
+    let className = 'error';
     this.view.innerHTML += `<li class="${className}">${message}</li>`;
   }
 }
