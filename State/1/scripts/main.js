@@ -1,6 +1,6 @@
 import Download from './Download';
 
-var oDownload = new Download();
+let oDownload = new Download();
 
 $("#download_button").click(function() {
   oDownload.download();
