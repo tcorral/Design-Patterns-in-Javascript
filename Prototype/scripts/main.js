@@ -1,8 +1,8 @@
 import HumanBeing from './HumanBeing';
 
-var me = new HumanBeing({ skinColor: 'pale', hairColor: 'brown', height:'173cm', weight: '100kg', gender: 'male'});
+let me = new HumanBeing({ skinColor: 'pale', hairColor: 'brown', height:'173cm', weight: '100kg', gender: 'male'});
 
-var clone = me.clone();
+let clone = me.clone();
 
 console.log(`Are original and clone the same instance? ${me === clone}`);
 
