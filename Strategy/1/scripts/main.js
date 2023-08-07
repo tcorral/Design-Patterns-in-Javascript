@@ -1,8 +1,8 @@
 import MallardDuck from '../../common/MallardDuck';
 import RedheadDuck from '../../common/RedheadDuck';
 
-var mallard = new MallardDuck();
-var redhead = new RedheadDuck();
+let mallard = new MallardDuck();
+let redhead = new RedheadDuck();
 mallard.quack();
 mallard.swim();
 mallard.display();
