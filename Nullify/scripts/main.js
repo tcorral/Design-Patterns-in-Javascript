@@ -1,4 +1,4 @@
 import Nullify from './Nullify';
 
-var oNullify = new Nullify();
+let oNullify = new Nullify();
 oNullify.fillContent();
