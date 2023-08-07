@@ -1,5 +1,5 @@
 export default (function(win) {
-  var oContainer = null;
+  let oContainer = null;
 
   function setContainer(oCont) {
     oContainer = oCont;
