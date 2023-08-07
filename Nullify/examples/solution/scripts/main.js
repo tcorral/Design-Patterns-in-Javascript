@@ -1,7 +1,7 @@
-var nElement = 0;
-var nTimes = 100000;
+let nElement = 0;
+let nTimes = 100000;
 function createElement() {
-  var div = document.createElement("div");
+  let div = document.createElement("div");
   div.onclick = function () {};
   div = null;
 }
