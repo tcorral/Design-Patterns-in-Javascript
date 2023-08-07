@@ -1,7 +1,7 @@
 import App from './App';
 
 export default (function(namespace) {
-  var Ajax = function() {
+  let Ajax = function() {
     console.log('Ajax: Instanced!');
   };
   Ajax.prototype.setUp = function() {
@@ -11,7 +11,7 @@ export default (function(namespace) {
   Ajax.prototype.call = function() {
     console.log('Ajax: Call!');
   };
-  var DOM = function() {
+  let DOM = function() {
     console.log('DOM: Instanced!');
   };
   DOM.prototype.byId = function(sId) {
