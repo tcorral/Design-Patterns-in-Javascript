@@ -1,8 +1,8 @@
 class TryFinally {
   getContent() {
-    var test1 = document.getElementById("test1");
-    var test2 = document.getElementById("test2");
-    var test3 = document.getElementById("test3");
+    let test1 = document.getElementById("test1");
+    let test2 = document.getElementById("test2");
+    let test3 = document.getElementById("test3");
     test1.onclick = function() {};
     test2.onclick = function() {};
     test3.onclick = function() {};
