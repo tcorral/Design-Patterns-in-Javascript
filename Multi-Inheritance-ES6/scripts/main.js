@@ -1,6 +1,6 @@
 import Duck from './Duck';
 
-var duck = new Duck();
+let duck = new Duck();
 
 duck.fly();
 duck.quack();
