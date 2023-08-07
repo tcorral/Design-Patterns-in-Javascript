@@ -1,6 +1,6 @@
 import GumballMachine from './GumballMachine';
 
-var oGumballMachine = new GumballMachine();
+let oGumballMachine = new GumballMachine();
 
 $("#insert_quarter_button").click(function() {
   oGumballMachine.insertQuarter();
